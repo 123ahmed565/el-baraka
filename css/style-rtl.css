@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --primary:#e4eaee;
+    --colorText:#d88511;
+    --secondary:#343434;
+    --far_bars:#d88511;
+    --icon:#d88511;
+	
+}
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* start top button */
+.scroll-to-top{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 10%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+    background:var(--colorText);  
+    border: none;  
+    transition-duration: 500ms;
+    z-index: 4000;
+}
+
+.scroll-to-top:hover{
+    background: var(--secondary);
+}
+
+@media (max-width:768px) {
+    .scroll-to-top{
+        right: 20px;
+        bottom: 60px;
+        width: 40px;
+        height: 40px;
+    }
+}
+/* end top button */
+
+/* start preloader */
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: var(--secondary);
+    width: 100%;
+    height: 100%;
+
+}
+
+.loader{
+    border:  0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+} 
+
+.loader:before, .loader:after{
+    content: '';
+    border: 1em solid white;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before{
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+/* end preloader */
+
+
+/* global features to any website */
+ul li{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+a{
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    text-decoration: none;  
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img:hover{
+    opacity: .7;
+    transition: .3s all ease-in-out;
+}
+
+
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(var(--secondary),var(--colorText));
+    border-radius: 8px;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--colorText) !important;
+}
+
+h2{
+    font-size: 20px;
+    color: var(--colorText);
+    font-weight: 800;
+    line-height: 30px;
+}
+
+h3{
+    font-size: 25px;
+    color: var(--secondary);
+}
+
+h4{
+    font-size: 30px;
+    color: var(--secondary);
+    line-height: 40px;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    color: var(--secondary);
+}
+
+p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #707070;
+}
+
+h6{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 50px;
+    color: var(--secondary);
+}
+
+.btn{
+    border: none;
+    background-color: var(--colorText);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn:hover{
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .5s all ease-out;
+}
+
+i{
+    color: var(--icon);
+}
+
+.social-icon i{
+    color: #646464 !important;
+    padding: 7px;
+    font-size: 20px;
+}
+.social-icon i:hover{
+    background-color: var(--icon);
+    border-radius: 50%;
+    color:white !important;
+    transition: .3s all ease-in-out;
+}
+
+img:hover{
+    opacity: .8;
+}
+/* end global features */
+
+
