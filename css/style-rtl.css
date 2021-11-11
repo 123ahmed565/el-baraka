@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root{
-    --primary:#e4eaee;
+    --primary:#141424;
     --colorText:#d88511;
     --secondary:#343434;
     --far_bars:#d88511;
-    --icon:#d88511;
+    --icon:#ffffff;
 	
 }
 
@@ -153,7 +153,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb{
-    background:linear-gradient(var(--secondary),var(--colorText));
+    background:linear-gradient(white,var(--secondary));
     border-radius: 8px;
 }
 
@@ -183,7 +183,7 @@ h4{
 }
 
 h5{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
     line-height: 50px;
     color: var(--secondary);
@@ -209,6 +209,7 @@ h6{
     color: white;
     border-radius: 10px;
     padding: 10px 20px;
+    white-space: nowrap;
 }
 
 .btn:hover{
@@ -225,20 +226,467 @@ i{
 }
 
 .social-icon i{
-    color: #646464 !important;
+    color: white !important;
     padding: 7px;
-    font-size: 20px;
+    font-size: 17px;
 }
 .social-icon i:hover{
-    background-color: var(--icon);
+    background-color: var(--primary);
     border-radius: 50%;
     color:white !important;
-    transition: .3s all ease-in-out;
+    transition: .3s all ease;
 }
+
 
 img:hover{
     opacity: .8;
 }
+
+span{
+    color: #646464 !important;
+    font-size: 13px;
+}
+
+input[type=text], input[type=email],input[type=number],input[type=password],input[type=date], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #707070; 
+    font-size: 14px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    /* border-bottom-style: groove; */
+}
+
+input:focus{
+border-color: var(--colorText) !important;
+box-shadow: none !important;
+}
+
+input[type=submit] {
+    background-color: var(--colorText);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: black;
+    transition: .3s all ease-in-out;
+}
+
+.btn-close{
+    margin-right: auto !important;
+    margin-left: 0 !important;
+} 
+
 /* end global features */
 
+/* start upperbar */
+.upperbar{
+    background-color: #001d38 !important;
+}
+
+.upperbar span{
+    word-break: break-all;
+}
+    /* end upperbar */
+
+/* start navbar canavs */
+@media (min-width:768px) {
+    .navbar-nav{
+        margin-right: 15%;
+        /* margin-left: 250px; */
+    }
+}
+
+@media (min-width:768px) {
+    .fa-bars{
+        display: none;
+    }
+}
+
+.fa-bars{
+   color: var(--far_bars);
+}
+.navbar{
+    background-color: var(--primary) !important;
+}
+
+
+@media (min-width:768px) {
+    .navbar-expand-sm .navbar-nav .nav-link{
+        color: white;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width:768px) {
+    .navbar-expand-sm .navbar-nav .nav-link{
+        color: black !important;
+    }
+    .navbar .logo-navbar{
+        height: 50px;
+        width: 50px;
+    }
+    .dropbtn{
+        padding: 0 !important;
+        color: black !important;
+    }
+    .icons i{
+        color: black !important;
+    }
+}
+
+.offcanvas {
+    width: 70% !important;
+}
+
+.nav-item .nav-link{
+    color: white !important;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.nav-item .nav-link:hover{
+    color: var(--colorText) !important;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: .3s all ease-in-out;
+}
+
+.btn{
+    border: none;
+    background-color: var(--colorText);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+
+.btn:hover{
+    border: none;
+    background-color: var(--secondary);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: .5s all ease-in-out;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    background: none;
+    border-radius: 20%;
+    color: white;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dropbtn:hover{
+    color: var(--colorText) !important;
+    font-size: 18px;
+    transition: .3s all ease-in-out;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 35px;
+}
+  
+  .dropdown-content a {
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.dropdown-content a:hover {background-color: var(--colorText); color: white;}
+
+.dropdown:hover .dropdown-content {display: block;}
+/* end navbar canvas */
+
+/* start design for button in modal */
+.btn-login{
+    border: none;
+    background:none !important;
+    color: white;
+    width:30px;
+    height:30px;
+    line-height: 30px;
+    border-radius: 50%;
+    /* padding: 10px 20px; */
+    white-space: nowrap;
+    margin-top: 8px !important;
+}
+
+.btn-facebook{
+    padding: 10px;
+    background-color: #097eeb;
+    color: white;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 4%;
+}
+
+.btn-google{
+    padding: 10px;
+    background-color: #ea4335;
+    color: white;
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 4%;
+}
+/* end design for button in modal */
+
+/* start slider */
+.big-image {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("../images/slider/banner.png");
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay h1 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 70px;
+    margin: 0 0 5px;
+    position: relative;
+    bottom: 19%;
+    color: white !important;
+}
+
+.overlay p {
+    margin: 0;
+    position: relative;
+    bottom: 19%;
+    color: white !important;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
+
+.overlay .select{
+    position: relative;
+    bottom: 10%;
+    background: rgba(0, 28, 56, 0.6);
+    padding: 30px;
+    border-radius: 1%;
+    border-radius: 10px;
+    max-width: 1000px;
+}
+
+label{
+    color: var(--colorText);
+}
+
+.selects{
+    background: none;
+    border:1px solid rgb(194, 191, 191);
+    color: white;
+}
+
+.range-slide {
+    position: relative;
+    /* margin: 40px; */
+    height: 1px;
+    width: 240px;
+    right: 37%;
+    top: 15%;
+}
+
+.range-slide  .slide {
+    position: absolute;
+    top: 0;
+    height: 4px;
+    background: #ccc;
+    left: 9px;
+    right: 9px;
+}
+
+.range-slide .line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 4px;
+    background-color: var(--colorText);
+}
+
+.range-slide  .thumb {
+    position: absolute;
+    z-index: 2;
+    text-align: left;
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 50%;
+    outline: none;
+    top: -7px;
+    height: 18px;
+    width: 18px;
+    margin-left: -9px;
+}
+
+.range-slide input {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+    pointer-events: none;
+    z-index: 3;
+    height: 3px;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    margin: 0;
+}
+
+.range-slide input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    pointer-events: all;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.display {
+    /* margin: 40px; */
+    width: 240px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.display span{
+    color: white !important;
+}
+
+
+@media (max-width:768px) {
+    .overlay h1 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40px;
+        margin: 0 0 5px;
+        position: relative;
+        bottom: 2%;
+        color: white !important;
+    }
+    .overlay p {
+        margin: 0;
+        font-size: 12px;
+        position: relative;
+        bottom: 1%;
+        color: white !important;
+        font-weight: 300;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+    .overlay .select{
+        position: relative;
+        bottom: 0%;
+        background: rgba(0, 28, 56, 0.6);
+        padding: 30px;
+        border-radius: 1%;
+        border-radius: 10px;
+    }
+    .range-slide {
+        position: relative;
+        /* margin: 40px; */
+        height: 1px;
+        width: 240px;
+        right: 14%;
+        top: 15%;
+    }
+}
+/* end slider */
+
+/* start cards for appartment */
+.appartments{
+    margin-top: 40px;
+}
+
+.sale{
+    position: absolute;
+    color: white;
+    top: 5%;
+    background-color: var(--colorText);
+    width: 80px;
+    height: 46px;
+    line-height: 45px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.card{
+    border: none !important;
+    width: 350px;
+}
+
+.price{
+    background-color: var(--primary);
+    color: white !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.btn-card {
+    background: none !important;
+    border: 1px solid var(--colorText);
+    border-radius: 30px;
+}
+
+.btn-card:hover{
+    background-color: var(--colorText) !important;
+    transition: .4s all ease-out;
+    color: white !important;
+}
+/* end cards for  appartment */
 
