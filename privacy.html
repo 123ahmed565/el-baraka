@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="icon" href="./images/rm-bg-logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./css/style-rtl.css"> -->
+    <title>El-Baraka</title>
+</head>
+
+<body>
+
+    <!-- start upperbar -->
+    <div class="upperbar  d-none d-sm-block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col mt-1" style="white-space: nowrap;">
+                    <span>
+                        Welcome to El-Baraka consulting service
+                    </span>
+                </div>
+
+                <div class="col">
+                    <a href="">
+                        <i class="far fa-envelope m-2"></i>
+                        <span>info@paymac.net</span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="tel:+201012370014">
+                        <i class="fas fa-phone-alt m-2"></i>
+                        <span>+2001012370014</span>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a>
+                        <i class="fas fa-map-marker-alt m-2"></i>
+                        <span>9870 St Vincent Place</span>
+                    </a>
+                </div>
+
+                <div class="col social-icon">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-telegram"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end upperbar -->
+
+    <!-- start header -->
+    <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top">
+        <div class="container">
+            <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
+            <a href="./index.html"> <img class="logo-navbar shadow-lg" src="./images/elbaraka-logo white .png"
+                    style="border-radius: 50%;" width="80" height="80" alt="image logo" loading="lazy"> </a>
+            <div class="offcanvas offcanvas-start" id="demo">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title"><a href="./index.html"> <img src="./images/elbaraka-logo white .png"
+                                width="80" height="80" alt="image menu" loading="lazy"></a></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body col justify-content-md-between">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">About</a>
+                        </li>
+                        <div class="dropdown d-flex">
+                            <button class="dropbtn pe-2 ps-2">Categories</button>
+                            <div class="dropdown-content">
+                                <a href="./categories.html">Lands</a>
+                                <a href="./categories.html">Apartments</a>
+                                <a href="./categories.html">Villas</a>
+                            </div>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./medical-tests.html">Our Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">Our Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ar/index.html">عربى</a>
+                        </li>
+                        <!-- <div class="dropdown d-flex">
+                                <button class="dropbtn"><i class="fa fa-language m-1"></i>Lan</button>
+                                <div class="dropdown-content">
+                                    <a href="./ar/index.html">عربى</a>
+                                    <a href="./index.html">English</a>
+                                    <a href="#">French</a>
+                                </div>
+                            </div> -->
+                    </ul>
+
+                    <!-- start modal bootstrap -->
+                    <div class="icons">
+                        <button type="button" class="btn-login mt-3 mt-md-0" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                            <i class="fas fa-user "></i>
+                        </button>
+
+                        <a href="./favourite.html">
+                            <button type="button" class="btn-login mt-3 mt-md-0">
+                                <i class="fas fa-heart "></i>
+                            </button>
+                        </a>
+
+                        <a href="./compare.html">
+                            <button type="button" class="btn-login mt-3 mt-md-0">
+                                <i class="fas fa-compress-alt "></i>
+                            </button>
+                        </a>
+
+                        <button type="button" class="btn-login mt-3 mt-md-0" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal-1" data-bs-whatever="@mdo">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end header  -->
+
+    <!-- start slider -->
+    <div class="big-image" style="height: 250px;">
+        <div class="overlay">
+            <!-- <h1 class="mt-5">terms & conditions</h1> -->
+            <p class="mt-5" style="font-size: 30px"><a href="./index.html"><i class="fas fa-home fa-1x m-2"></i>Home</a><i class="fa fa-chevron-right m-2"></i>
+                <span class="text-white fa-1x">Privacy</span> </p>
+        </div>
+    </div>
+    <!-- end slider -->
+
+    <div class="privacy mt-5">
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, in odit tenetur iste ad aspernatur aut
+                voluptatibus nostrum ipsum vero enim, esse, perferendis veritatis dolores molestias quaerat incidunt
+                veniam fugiat!</p>
+        </div>
+    </div>
+
+    <!-- start footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col follow-us footer-center-mobile">
+                        <img class="logo" src="./images/elbaraka-logo.png" alt="" width="120" height="120">
+                        <h3 class="text-white mt-4">Follow Us</h3>
+                        <div class="col-8 social-icons mx-auto mx-md-0">
+                            <a href=""><i class="fab fa-facebook m-"></i></a>
+                            <a href=""><i class="fab fa-twitter m-1"></i></a>
+                            <a href=""><i class="fab fa-whatsapp m-1"></i></a>
+                            <a href=""><i class="fab fa-instagram m-1"></i></a>
+                            <a href=""><i class="fab fa-facebook m-1"></i></a>
+                            <a href=""><i class="fab fa-twitter m-1"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 footer-center-mobile">
+                        <h5 class="text-white">Section</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./about-us.html">About</a></li>
+                            <li><a href="./categories.html">categories</a></li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 footer-center-mobile">
+                        <h5 class="text-white">More</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="./terms_conditions.html">Terms & Conditions</a></li>
+                            <li><a href="./privacy.html">Privacy & Policy</a></li>
+                            <li><a href="#">Warranty</a></li>
+                            <li><a href="#">Shipment</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 footer-center-mobile">
+                        <h5 class="text-white">Contact</h5>
+                        <ul class="list-unstyled text-white">
+                            <li><i class="fas fa-map-marker-alt m-2"></i>6th of October City,Giza</li>
+                            <li><i class="fas fa-phone-alt m-2"></i><a href="tel:+021012370014">+021012370014</a></li>
+                            <li><i class="fas fa-envelope m-2"></i>info@paymac.net</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom p-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h6 class="text-white ">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved El-Baraka
+
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </h4>
+                    </div>
+                    <div class="col-md-3">
+                        <h6 class="text-right text-white"> powered by <a href="https://paymac.net/" target="_blank"
+                                class="paymac" style="color:white;font-size: 12px;">Paymac.net</a> </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <!-- start  modal register -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Full Name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="recipient-name" placeholder="Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="recipient-name" placeholder="Password"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="recipient-name"
+                                placeholder="Re-type Password" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn mx-auto d-block w-100">Register</button>
+                </div>
+                <h6 class="fw-bold text-center">
+                    Already have an account?
+                    <span class="text-primary" data-bs-target="#exampleModal-2" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Login Now!</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- start  modal search -->
+    <div class="modal fade modal-dialog" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your Search</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Search" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn mx-auto d-block pe-3 ps-3">
+                        <i class="fas fa-search text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start  modal Login Now -->
+    <div class="modal fade modal-dialog" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome back!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <input type="number" class="form-control" id="recipient-name" placeholder="Password"
+                                required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn w-100">
+                        Login
+                    </button>
+                    <span class="text-primary fa-1x" data-bs-target="#exampleModal-3" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Forget Password?</span>
+                </div>
+                <p class="fw-bold text-center text-dark">
+                    Or Login with
+                </p>
+                <ul class="d-flex mx-auto d-block">
+                    <li><button class="btn-facebook m-2"><i class="fab fa-facebook-f"></i>&nbsp; facebook</button></li>
+                    <li><button class="btn-google m-2 "><i class="fab fa-google"></i>&nbsp; Google &nbsp;&nbsp;</button>
+                    </li>
+                </ul>
+                <h6 class="text-dark fw-bold text-center">
+                    Dont Hav Any Account?
+                    <span class="text-primary" data-bs-target="#exampleModal" data-bs-toggle="modal"
+                        data-bs-dismiss="modal">Register Now!</span>
+                </h6>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- start modal forget-password -->
+    <div class="modal fade modal-dialog" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Forget Password</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Email" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn mx-auto d-block pe-3 ps-3">
+                        Send
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

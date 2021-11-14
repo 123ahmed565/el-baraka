@@ -304,7 +304,7 @@ input[type=submit]:hover {
 /* start navbar canavs */
 @media (min-width:768px) {
     .navbar-nav{
-        margin-right: 15%;
+        margin-right: 22%;
         /* margin-left: 250px; */
     }
 }
@@ -319,7 +319,14 @@ input[type=submit]:hover {
    color: var(--far_bars);
 }
 .navbar{
-    background-color: var(--primary) !important;
+    /* background-color: var(--primary) !important; */
+    background-color: black !important;
+}
+
+.logo-navbar{
+    position: absolute;
+    top: 25%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
 }
 
 
@@ -344,6 +351,12 @@ input[type=submit]:hover {
     }
     .icons i{
         color: black !important;
+    }
+    .logo-navbar{
+        position: relative;
+        top: 0%;
+        left:0%;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5) !important;
     }
 }
 
@@ -690,3 +703,210 @@ label{
 }
 /* end cards for  appartment */
 
+/* start testimonilas */
+.testimonials{
+    background-image: url("../images/slider/banner.png");
+    margin-top: 30px;
+}
+
+.testimonials .swiper {
+    width: 70%;
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .testimonials .swiper {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.testimonials .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgba(0, 28, 56, 0.6);
+    border-radius: 10px !important;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.testimonials .swiper-slide img {
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    border-radius: 50%;
+    border: 3px solid var(--colorText);
+}
+
+.swiper-button-next{
+    background-color: var(--colorText) !important;
+    font-size: 10px !important;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.swiper-button-next:hover{
+    background-color:black !important;
+}
+
+.swiper-button-next:after{
+    font-size: 15px !important;
+    color: white !important;
+}
+
+.swiper-button-prev{
+    background-color: var(--colorText) !important;
+    font-size: 10px !important;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev:hover{
+    background-color: black !important;
+}
+
+.swiper-button-prev:after{
+    font-size: 15px !important;
+    color: white !important;
+}
+
+/* end testimonilas */
+
+/* start our team  */
+.our-team{
+    margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .our-team img{
+        height: 300px !important;
+    }
+}
+
+.our-team .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    border: none;
+    transition: 0.3s;
+}
+
+.our-team .card img{
+    border-radius: 10%;
+}
+.title {
+    color: black;
+    font-size: 19px;
+    margin-top: 10px;
+}
+/* end our team */
+
+/* start question and answers */
+.accordion-button.collapsed {
+    background: wheat;
+}
+
+/* .accordion-button.collapsed:hover{
+    background-color: var(--colorText);
+} */
+
+.accordion-button.collapsed:focus{
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.accordion-button.collapsed::after{
+    color: white !important;
+}
+
+.accordion-collapse{
+    background-color: white;
+}
+
+.accordion-flush .accordion-item .accordion-button{
+    background-color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.accordion-button::after{
+    margin-right: auto !important;
+    margin-left: 0 !important;
+}
+
+@media (max-width:768px) {
+    .questions_annswers img {
+        width: 350px;
+        height: 300px;
+        margin: auto;
+        display: block;
+    }
+}
+
+/* end questions and answers*/
+
+/* start footer */
+.footer-top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.footer-top a {
+    color: white;
+    font-size: 17px;
+}
+
+.footer-top a:hover {
+    color: var(--colorText);
+}
+
+.footer-bottom {
+    background-color:black;
+    border-top: 1px solid gray;
+}
+
+.footer-top .follow-us{
+    cursor: pointer;
+}
+
+.footer-top .follow-us i:hover{
+    color: var(--primary) !important;
+    transition: .2s all ease;
+}
+
+@media (max-width:768px) {
+    .footer-top .footer-center-mobile{
+    text-align: center !important;
+    }
+}
+/* end footer */
+
+/* start about us */
+@media (max-width:768px) {
+    .about-us img{
+    width: 350px;
+    height: 300px;
+    margin: auto;
+    display: block;
+    }
+}
+/* end about us */
