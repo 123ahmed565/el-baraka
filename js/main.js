@@ -44,3 +44,4 @@ $('#line').css({
       prevEl: ".swiper-button-prev",
     },
   });
+
