@@ -1380,6 +1380,13 @@ label{
 /* end favourite */
 
 /* start compare */
+
+.list-group .color{
+    background-color: var(--colorText) !important;
+    color: white !important;
+}
+
+
 .compare  .swiper {
     width: 100%;
     height: 100%;
