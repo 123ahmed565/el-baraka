@@ -29,51 +29,51 @@
     <button class="scroll-to-top"><i class="fas fa-long-arrow-alt-up text-white shadow-lg"></i></button>
     <!-- end scroll to top -->
 
-    <!-- start upperbar -->
-    <div class="upperbar  d-none d-sm-block">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col mt-1" data-toggle="tooltip" title="Welcome to El-Baraka consulting service"
-                    style="white-space: nowrap;">
-                    <span>
-                        Welcome to El-Baraka consulting service
-                    </span>
+        <!-- start upperbar -->
+        <div class="upperbar  d-none d-sm-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col mt-1" data-toggle="tooltip" title="Welcome to El-Baraka consulting service"
+                        style="white-space: nowrap;">
+                        <span>
+                            Welcome to El-Baraka consulting service
+                        </span>
+                    </div>
+    
+                    <div class="col mt-1" data-toggle="tooltip" title="info@paymac.net">
+                        <a href="" style="width: 100%; display:flex;">
+                            <i class="far fa-envelope m-1" style="color: var(--colorText) !important;"></i>
+                            <span class="mt-1">info@paymac.net</span>
+                        </a>
+                    </div>
+    
+                    <div class="col mt-1" data-toggle="tooltip" title="+2001012370014">
+                        <a href="tel:+201012370014" style="width: 100%; display:flex;">
+                            <i class="fas fa-phone-alt m-1 style="color: var(--colorText) !important;""></i>
+                            <span class="mt-1">+2001012370014</span>
+                        </a>
+                    </div>
+    
+                    <div class="col mt-1" data-toggle="tooltip" title="9870 St Vincent Place">
+                        <a style="width: 100%; display:flex;">
+                            <i class="fas fa-map-marker-alt mt-1" style="color: var(--colorText) !important;"></i>
+                            <span class="m-1">9870 St Vincent Place</span>
+                        </a>
+                    </div>
+    
+                    <div class="col social-icon m-0">
+                        <a href=""><i class="fab fa-facebook" style="color: var(--colorText) !important;"></i></a>
+                        <a href=""><i class="fab fa-twitter" style="color: var(--colorText) !important;"></i></a>
+                        <a href=""><i class="fab fa-whatsapp" style="color: var(--colorText) !important;"></i></a>
+                        <a href=""><i class="fab fa-instagram" style="color: var(--colorText) !important;"></i></a>
+                        <a href=""><i class="fab fa-telegram" style="color: var(--colorText) !important;"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in" style="color: var(--colorText) !important;"></i></a>
+                    </div>
+    
                 </div>
-
-                <div class="col mt-1" data-toggle="tooltip" title="info@paymac.net">
-                    <a href="" style="width: 100%; display:flex;">
-                        <i class="far fa-envelope m-1"></i>
-                        <span class="mt-1">info@paymac.net</span>
-                    </a>
-                </div>
-
-                <div class="col mt-1" data-toggle="tooltip" title="+2001012370014">
-                    <a href="tel:+201012370014" style="width: 100%; display:flex;">
-                        <i class="fas fa-phone-alt m-1"></i>
-                        <span class="mt-1">+2001012370014</span>
-                    </a>
-                </div>
-
-                <div class="col mt-1" data-toggle="tooltip" title="9870 St Vincent Place">
-                    <a style="width: 100%; display:flex;">
-                        <i class="fas fa-map-marker-alt mt-1"></i>
-                        <span class="m-1">9870 St Vincent Place</span>
-                    </a>
-                </div>
-
-                <div class="col social-icon m-0">
-                    <a href=""><i class="fab fa-facebook"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-whatsapp"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-telegram"></i></a>
-                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-
             </div>
         </div>
-    </div>
-    <!-- end upperbar -->
+        <!-- end upperbar -->
 
     <!-- start header -->
     <nav class="navbar navbar-expand-sm shadow-sm bg-white sticky-top">
@@ -420,10 +420,63 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Search" required>
+                    <form action="">
+                        <!-- <input type="text" class="form-control" id="recipient-name" placeholder="Search" required> -->
+
+                        <div class="row">
+                            <div class="col">
+                                <label for="country">Country</label>
+                                <select class="selects" name="Country" id="type">
+                                    <option value="Egypt" class="options">Egypt</option>
+                                    <option value="Italy" class="options">Italy</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="City">City</label>
+                                <select class="selects" name="" id="type">
+                                    <option value="Cairo" class="options">Cairo</option>
+                                    <option value="Giza" class="options">Giza</option>
+                                </select>
+                            </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label for="City">Area</label>
+                                <select class="selects" name="" id="type">
+                                    <option value="Cairo" class="options">127m</option>
+                                    <option value="Giza" class="options">300m</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="City">Project</label>
+                                <select class="selects" name="" id="type">
+                                    <option value="Cairo" class="options">octobor</option>
+                                    <option value="Giza" class="options">7th region</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                
+                        <label for="Category">Category</label>
+                        <select class="selects" name="" id="type">
+                            <option value="Lands" class="options">Lands</option>
+                            <option value="Appartments" class="options">Appartments</option>
+                            <option value="Villas" class="options">Villas</option>
+                        </select>
+                            </div>
+                            <div class="col">
+                                
+                        <label for="Type">Type</label>
+                        <select class="selects" name="" id="type">
+                            <option value="Sale" class="options">Sale</option>
+                            <option value="rent" class="options">rent</option>
+                        </select>
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
                 <div class="modal-footer">

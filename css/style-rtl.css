@@ -354,7 +354,8 @@ input[type=submit]:hover {
 
 /* start upperbar */
 .upperbar{
-    background-color: #001d38 !important;
+    /* background-color: #001d38 !important; */
+    background-color: white !important;
 }
 
 .upperbar span{
@@ -855,7 +856,7 @@ select{
 
 .our-team .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
+    /* max-width: 300px; */
     margin: auto;
     text-align: center;
     border: none;
@@ -1407,6 +1408,7 @@ select{
     line-height: 30px;
     border-radius: 50%;
     color: white !important;
+    cursor: pointer;
 }
 
 .icons .add-to-compare{
@@ -1416,6 +1418,7 @@ select{
     line-height: 30px;
     border-radius: 50%;
     color: white !important;
+    cursor: pointer;
 }
 
 .icons-mobile{
@@ -1482,6 +1485,12 @@ select{
 .card-link{
     background-color: red;
     color: white !important;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto !important;
+    border-radius: 50%;
 }
 .card-link:hover{
     background-color: black;
