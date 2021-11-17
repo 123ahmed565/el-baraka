@@ -588,6 +588,7 @@ label{
 
 select{
     background-color: #001d38 !important;
+    border: none !important;
 }
 
 .selects{
