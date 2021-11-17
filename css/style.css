@@ -528,6 +528,10 @@ label{
     color: var(--colorText);
 }
 
+select{
+    background-color: #001d38 !important;
+}
+
 .selects{
     background: none;
     border:1px solid rgb(194, 191, 191);
@@ -1483,5 +1487,7 @@ label{
 max-width: 800px;
 }
 /* end category details */
+
+
 
 
