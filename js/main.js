@@ -30,22 +30,6 @@ $('#line').css({
 });
 
 
- // testimonials
- var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    loop:true,
-    autoplay:true,
-    freeMode: true,
-    grabCursor:true,
-    loop:true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
-
-
 
   // grid and list for page categories
   
@@ -66,3 +50,50 @@ function toggleView(galleryWidgetElement)
 {
 	galleryWidgetElement.classList.toggle('list-view');
 }
+
+
+// start side bar drop down select page categoreis
+
+// $(".content").css("display", "block");
+// $(".item-header:first,.icon:first").toggleClass("active");
+// ('.item-header .icone:first').addClass('active')
+$(".item-header").click(function () {
+  $(this).next().slideToggle(500);
+
+  $(this).find(".icon").toggleClass("active");
+  $(this).toggleClass("active");
+});
+
+
+// swiper for compare
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  autoPlay:false,
+  direction:'horizontal',
+  loop:true,
+  preloadImages: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    0: {
+      slidesPerView: 2.5,
+      spaceBetween: 15
+  
+    },
+    600: {
+      slidesPerView: 3.5,
+      spaceBetween: 20
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+      
+  }
+});
+
+
