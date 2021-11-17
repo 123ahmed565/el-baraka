@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="./css/style.css">
-    <!-- <link rel="stylesheet" href="./css/style-rtl.css"> -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style-rtl.css">
     <title>El-Baraka</title>
 </head>
 
@@ -206,8 +206,8 @@
                             <span class="thumb" id="thumbMin" style="left: 0%;"></span>
                             <span class="thumb" id="thumbMax" style="left: 100%;"></span>
                         </div>
-                        <input id="rangeMin" type="range" max="100" min="10" step="5" value="0">
-                        <input id="rangeMax" type="range" max="100" min="10" step="5" value="100">
+                        <input style="direction: ltr !important;" id="rangeMin" type="range" max="100" min="10" step="5" value="0">
+                        <input style="direction: ltr !important;" id="rangeMax" type="range" max="100" min="10" step="5" value="100">
                     </div>
                     <div class="display mx-auto">
                         <span id="min">10</span>
@@ -215,7 +215,7 @@
                         <span id="max">100</span>
                     </div>
                 </div>
-
+                <input type="button" class="btn mt-3 w-50 mx-auto d-block" value="Search" name="Search" id="Search">
             </div>
         </div>
     </div>

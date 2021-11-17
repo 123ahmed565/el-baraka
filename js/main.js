@@ -31,6 +31,9 @@ $('#line').css({
 
 
 
+
+
+
   // grid and list for page categories
   
   var galleryWidgetElements = document.querySelectorAll('.gallery-widget');

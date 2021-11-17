@@ -611,14 +611,14 @@ label{
         line-height: 40px;
         margin: 0 0 5px;
         position: relative;
-        bottom: 2%;
+        bottom: -1% !important;
         color: white !important;
     }
     .overlay p {
         margin: 0;
         font-size: 12px;
         position: relative;
-        bottom: 1%;
+        bottom: -1% !important;
         color: white !important;
         font-weight: 300;
         line-height: 20px;
@@ -626,7 +626,7 @@ label{
     }
     .overlay .select{
         position: relative;
-        bottom: 0%;
+        bottom: -1% !important;
         background: rgba(0, 28, 56, 0.6);
         padding: 30px;
         border-radius: 1%;
