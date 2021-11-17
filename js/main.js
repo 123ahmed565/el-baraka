@@ -65,6 +65,23 @@ $(".item-header").click(function () {
 });
 
 
+// swiper for testimonials
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  freeMode: true,
+  autoPlay:false,
+  loop:true,
+  direction:'horizontal',
+  loop:true,
+  preloadImages: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
+
 // swiper for compare
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 3,
@@ -96,4 +113,12 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
+
+// start category detail page
+var swiper = new Swiper(".mySwiper3", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
