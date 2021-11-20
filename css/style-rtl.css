@@ -590,13 +590,14 @@ label{
 select{
     background-color: #001d38 !important;
     border: none !important;
+    color: white !important;
 }
 
-.selects{
+/* .selects{
     background: none;
     border:1px solid rgb(194, 191, 191);
     color: white;
-}
+} */
 
 .range-slide {
     position: relative;
@@ -715,7 +716,7 @@ select{
 /* end slider */
 
 /* start cards for appartment */
-.appartments{
+/* .appartments{
     margin-top: 40px;
 }
 
@@ -734,7 +735,6 @@ select{
 
 .card{
     border: none !important;
-    /* width: 350px; */
 }
 
 .price{
@@ -754,8 +754,15 @@ select{
     background-color: var(--colorText) !important;
     transition: .4s all ease-out;
     color: white !important;
-}
+} */
 /* end cards for  appartment */
+
+/* start for rent */
+.for-rent{
+    margin-right: 20px;
+    margin-top: 30px;
+}
+/* end for rent */
 
 /* start testimonilas */
 .testimonials{
@@ -1109,7 +1116,7 @@ select{
 
 .box-for-categories .add-to-compare{
     position: absolute;
-    top: 43%;
+    top: 46%;
     left: 84% !important;
     background-color: black;
     width: 30px;
@@ -1122,7 +1129,7 @@ select{
 
 .box-for-categories .add-to-favourite{
     position: absolute;
-    top: 56%;
+    top: 60%;
     left: 84% !important;
     background-color: black;
     width: 30px;
@@ -1248,7 +1255,7 @@ select{
 
 .gallery-widget.list-view .add-to-compare{
     position: absolute;
-    top: 62%;
+    top: 51%;
     right: 37%;
     background-color: black;
     width: 30px;
@@ -1265,7 +1272,7 @@ select{
 
 .gallery-widget.list-view .add-to-favourite{
     position: absolute;
-    top: 80%;
+    top: 67%;
     right: 37%;
     background-color: black;
     width: 30px;
@@ -1428,6 +1435,16 @@ select{
 }
 
 .icons-mobile .fa-trash-alt{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white !important; 
+}
+
+.icons-mobile .fa-heart{
     background-color: red;
     width: 30px;
     height: 30px;

@@ -12,6 +12,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./css/style-rtl.css"> -->
     <title>El-Baraka</title>
@@ -49,7 +51,7 @@
 
                 <div class="col mt-1" data-toggle="tooltip" title="+2001012370014">
                     <a href="tel:+201012370014" style="width: 100%; display:flex;">
-                        <i class="fas fa-phone-alt m-1 "style=" color: var(--colorText) !important;"></i>
+                        <i class="fas fa-phone-alt m-1 " style=" color: var(--colorText) !important;"></i>
                         <span class="mt-1">+2001012370014</span>
                     </a>
                 </div>
@@ -269,90 +271,94 @@
                         </div>
                     </div>
 
-                    <div class="appartments mt-0">
-                        <div class="container">
-                            <h3 class="text-center">Popular Properties</h3>
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12 mt-3 mt-md-0">
-                                    <a href="./category-detail.html">
-                                        <div class="card">
-                                            <img class="card-img-top" src="./images/appartments/apartment-1.jpeg"
-                                                style="width: 100%; height:200px" alt="Card image" loading="lazy">
-                                            <div class="card-body">
-                                                <h6 class="sale">for sale</h6>
-                                                <h5 class="card-title">Comfortable Apartment in Palace</h5>
-                                                <!-- <div class="row">
-                                                    <div class="col-7">
-                                                        <p class="card-text" style="display: flex;width:100%"><i
-                                                                class="fas fa-map-marker-alt text-dark m-1"></i>Popular
-                                                            Properties</p>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <p class="card-text"><i
-                                                                class="fas fa-tag text-dark m-1"></i>Apartment</p>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <span class="price">from $10k</span> -->
-                                            </div>
+                    <div class="for-rent mt-0">
+                        <!-- <div class="container"> -->
+                        <div class="row">
+
+                            <div class="box-shadow shadow-lg" style="width:30%">
+                                <a href="./category-detail.html">
+                                    <img src="./images/appartments/apartment-1.jpeg" alt="favourite" loading="lazy"
+                                        class="image" style="width:100%">
+                                    <p class="text-dark mt-3">Comfortable Apartment in Palace</p>
+                                </a>
+                                <div class="middle">
+                                    <div class="icons d-flex">
+                                        <div class=" add-to-trash m-2">
+                                            <i class="far fa-heart"></i>
                                         </div>
-                                    </a>
+                                        <div class=" add-to-compare m-2">
+                                            <i class="fas fa-compress-alt"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 col-sm-12 mt-3 mt-md-0">
-                                    <a href="./category-detail.html">
-                                        <div class="card">
-                                            <img class="card-img-top" src="./images/appartments/apartment-1.jpeg"
-                                                style="width: 100%; height:200px" alt="Card image" loading="lazy">
-                                            <div class="card-body">
-                                                <h6 class="sale">for sale</h6>
-                                                <h5 class="card-title">Comfortable Apartment in Palace</h5>
-                                                <!-- <div class="row">
-                                                    <div class="col-7">
-                                                        <p class="card-text" style="display: flex;width:100%"><i
-                                                                class="fas fa-map-marker-alt text-dark m-1"></i>Popular
-                                                            Properties</p>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <p class="card-text"><i
-                                                                class="fas fa-tag text-dark m-1"></i>Apartment</p>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <span class="price">from $10k</span> -->
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col-md-4 col-sm-12 mt-3 mt-md-0">
-                                    <a href="./category-detail.html">
-                                        <div class="card">
-                                            <img class="card-img-top" src="./images/appartments/apartment-1.jpeg"
-                                                style="width: 100%; height:200px" alt="Card image" loading="lazy">
-                                            <div class="card-body">
-                                                <h6 class="sale">for sale</h6>
-                                                <h5 class="card-title">Comfortable Apartment in Palace</h5>
-                                                <!-- <div class="row">
-                                                    <div class="col-7">
-                                                        <p class="card-text" style="display: flex;width:100%"><i
-                                                                class="fas fa-map-marker-alt text-dark m-1"></i>Popular
-                                                            Properties</p>
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <p class="card-text"><i
-                                                                class="fas fa-tag text-dark m-1"></i>Apartment</p>
-                                                    </div>
-                                                </div>
-                                                <br>
-                                                <span class="price">from $10k</span> -->
-                                            </div>
-                                        </div>
-                                    </a>
+                                <div class="icons-mobile d-lg-none d-lg-block">
+                                    <div class=" add-to-trash m-2">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class=" add-to-compare m-2">
+                                        <i class="fas fa-compress-alt"></i>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div class="box-shadow shadow-lg" style="width:30%">
+                                <a href="./category-detail.html">
+                                    <img src="./images/appartments/apartment-1.jpeg" alt="favourite" loading="lazy"
+                                        class="image" style="width:100%">
+                                    <p class="text-dark mt-3">Comfortable Apartment in Palace</p>
+                                </a>
+                                <div class="middle">
+                                    <div class="icons d-flex">
+                                        <div class=" add-to-trash m-2">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class=" add-to-compare m-2">
+                                            <i class="fas fa-compress-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icons-mobile d-lg-none d-lg-block">
+                                    <div class=" add-to-trash m-2">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class=" add-to-compare m-2">
+                                        <i class="fas fa-compress-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-shadow shadow-lg" style="width:30%">
+                                <a href="./category-detail.html">
+                                    <img src="./images/appartments/apartment-1.jpeg" alt="favourite" loading="lazy"
+                                        class="image" style="width:100%">
+                                    <p class="text-dark mt-3">Comfortable Apartment in Palace</p>
+                                </a>
+                                <div class="middle">
+                                    <div class="icons d-flex">
+                                        <div class=" add-to-trash m-2">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class=" add-to-compare m-2">
+                                            <i class="fas fa-compress-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icons-mobile d-lg-none d-lg-block">
+                                    <div class=" add-to-trash m-2">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class=" add-to-compare m-2">
+                                        <i class="fas fa-compress-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+
                             <a href="./categories.html"> <button
                                     class="btn-card mx-auto d-block  mt-3 pe-4 pt-2 pb-2 ps-4">More
                                     Properties</button></a>
+
                         </div>
+                        <!-- </div> -->
                     </div>
 
 
@@ -414,90 +420,96 @@
                 </div>
 
                 <div class="col-md-3 col-sm-12">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
-                            aria-describedby="basic-addon2">
-                    </div>
+                    <form action="">
+                        <div class="input-group mb-2 mt-2">
+                            <input type="text" class="form-control" placeholder="Search"
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        </div>
 
-                    <div class="item">
-                        <div class="item-header">
-                            <p class="title">
-                                <label for="browser" class="form-label text-dark">Country</label>
-                            </p><i class="fa fa-sort-down icon"></i>
+                        <div class="item">
+                            <div class="item-header">
+                                <p class="title">
+                                    <label for="browser" class="form-label text-dark">Country</label>
+                                </p><i class="fa fa-sort-down icon"></i>
+                            </div>
+                            <div class="content">
+                                <input class="form-control" list="browsers" name="browser" id="browser">
+                                <datalist id="browsers">
+                                    <option value="Cairo">
+                                    <option value="America">
+                                    <option value="Italy">
+                                </datalist>
+                            </div>
                         </div>
-                        <div class="content">
-                            <input class="form-control" list="browsers" name="browser" id="browser">
-                            <datalist id="browsers">
-                                <option value="Cairo">
-                                <option value="America">
-                                <option value="Italy">
-                            </datalist>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="item-header">
-                            <p class="title">
-                                <label for="browser" class="form-label text-dark">City</label>
-                            </p><i class="fa fa-sort-down icon"></i>
+                        <div class="item">
+                            <div class="item-header">
+                                <p class="title">
+                                    <label for="browser" class="form-label text-dark">City</label>
+                                </p><i class="fa fa-sort-down icon"></i>
+                            </div>
+                            <div class="content">
+                                <input class="form-control" list="browsers" name="browser" id="browser">
+                                <datalist id="browsers">
+                                    <option value="Egypt">
+                                    <option value="Alexandria">
+                                    <option value="Port Saied">
+                                </datalist>
+                            </div>
                         </div>
-                        <div class="content">
-                            <input class="form-control" list="browsers" name="browser" id="browser">
-                            <datalist id="browsers">
-                                <option value="Egypt">
-                                <option value="Alexandria">
-                                <option value="Port Saied">
-                            </datalist>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="item-header">
-                            <p class="title">
-                                <label for="browser" class="form-label text-dark">Category</label>
-                            </p><i class="fa fa-sort-down icon"></i>
+                        <div class="item">
+                            <div class="item-header">
+                                <p class="title">
+                                    <label for="browser" class="form-label text-dark">Category</label>
+                                </p><i class="fa fa-sort-down icon"></i>
+                            </div>
+                            <div class="content">
+                                <select class="selects" name="" id="type">
+                                    <option value="">Select your Category</option>
+                                    <option value="Lands" class="options">Lands</option>
+                                    <option value="Appartments" class="options">Appartments</option>
+                                    <option value="Villas" class="options">Villas</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="content">
-                            <select class="selects" name="" id="type">
-                                <option value="">Select your Category</option>
-                                <option value="Lands" class="options">Lands</option>
-                                <option value="Appartments" class="options">Appartments</option>
-                                <option value="Villas" class="options">Villas</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="item-header">
-                            <p class="title">
-                                <label for="browser" class="form-label text-dark">Type</label>
-                            </p><i class="fa fa-sort-down icon"></i>
+                        <div class="item">
+                            <div class="item-header">
+                                <p class="title">
+                                    <label for="browser" class="form-label text-dark">Type</label>
+                                </p><i class="fa fa-sort-down icon"></i>
+                            </div>
+                            <div class="content">
+                                <select class="selects" name="" id="type">
+                                    <option value="Lands" class="options">Sale</option>
+                                    <option value="Appartments" class="options">Leasing</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="content">
-                            <select class="selects" name="" id="type">
-                                <option value="Lands" class="options">Sale</option>
-                                <option value="Appartments" class="options">Leasing</option>
-                            </select>
-                        </div>
-                    </div>
 
-                    <div class="item">
-                        <div class="item-header">
-                            <p class="title">
-                                <label for="browser" class="form-label text-dark">Project</label>
-                            </p><i class="fa fa-sort-down icon"></i>
+                        <div class="item">
+                            <div class="item-header">
+                                <p class="title">
+                                    <label for="browser" class="form-label text-dark">Project</label>
+                                </p><i class="fa fa-sort-down icon"></i>
+                            </div>
+                            <div class="content">
+                                <input class="form-control" list="browsers" name="browser" id="browser">
+                                <datalist id="browsers">
+                                    <option value="Edge">
+                                    <option value="Firefox">
+                                    <option value="Chrome">
+                                    <option value="Opera">
+                                    <option value="Safari">
+                                </datalist>
+                            </div>
                         </div>
-                        <div class="content">
-                            <input class="form-control" list="browsers" name="browser" id="browser">
-                            <datalist id="browsers">
-                                <option value="Edge">
-                                <option value="Firefox">
-                                <option value="Chrome">
-                                <option value="Opera">
-                                <option value="Safari">
-                            </datalist>
-                        </div>
-                    </div>
+
+                        <input type="button" class="btn mt-3 w-50 mx-auto d-block" value="Search" name="Search"
+                            id="Search">
+                    </form>
+
 
                     <div class="recents-Appartments">
                         <h5 class="mt-5">Recent Real Estate</h5>
@@ -655,6 +667,8 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="./js/main.js"></script>
 
     <!-- start  modal register -->
