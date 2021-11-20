@@ -147,12 +147,12 @@ var swiper = new Swiper(".mySwiper", {
 
 
 // start category detail page
-var swiper = new Swiper(".mySwiper3", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// var swiper = new Swiper(".mySwiper3", {
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
 
 // Start Taostr js to alert
@@ -185,3 +185,26 @@ $(".fa-heart").click(function () {
 $(".fa-trash-alt").click(function () {
   toastr.error("category Removed");
 });
+
+
+
+var swiper = new Swiper(".mySwiper4", {
+  loop: true,
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiper2 = new Swiper(".mySwiper3", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
+});
+
+
