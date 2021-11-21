@@ -941,7 +941,7 @@ select{
 .map-container iframe{
     left:0;
     top:0;
-    height:80% !important;
+    height:100% !important;
     width:100% !important;
     border: none !important;
     position:absolute;
@@ -958,7 +958,7 @@ select{
 .map-container iframe{
     left:0;
     top:0;
-    height:60% !important;
+    height:100% !important;
     width:100% !important;
     position:absolute;
     margin-top: 10px !important;
