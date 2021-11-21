@@ -112,61 +112,7 @@ body{
       transform: scale(0.95);
     } */
     100% {
-        transform: scale(0.4);
-    }
-}
-/* end preloader */
-
-/* start preloader */
-.loader_bg{
-    position: fixed;
-    z-index: 999999;
-    background: var(--secondary);
-    width: 100%;
-    height: 100%;
-
-}
-
-.loader{
-    border:  0 solid transparent;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: calc(50vh - 75px);
-    left: calc(50vw - 75px);
-} 
-
-.loader:before, .loader:after{
-    content: '';
-    border: 1em solid white;
-    border-radius: 50%;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: loader 2s linear infinite;
-    opacity: 0;
-}
-
-.loader:before{
-    animation-delay: .5s;
-}
-
-@keyframes loader {
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-
-    50%{
-        opacity: 1;
-    }
-
-    100%{
-        transform: scale(1);
-        opacity: 0;
+        transform: scale(0.3);
     }
 }
 /* end preloader */
@@ -593,11 +539,12 @@ select{
     color: white !important;
 }
 
-/* .selects{
+.selects{
     background: none;
+    background-color: white!important;
     border:1px solid rgb(194, 191, 191);
-    color: white;
-} */
+    color: black !important;
+}
 
 .range-slide {
     position: relative;
@@ -759,7 +706,6 @@ select{
 
 /* start for rent */
 .for-rent{
-    margin-right: 20px;
     margin-top: 30px;
 }
 /* end for rent */
@@ -1331,7 +1277,7 @@ select{
 
 .item .content {
     display: none;
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
     border-radius: 10px;
 }
 
@@ -1348,14 +1294,15 @@ select{
 /* start favourite */
 .box-shadow{
     position: relative;
-    width: 23%;
-    margin: 10px;
+    /* width: 23%; */
+    /* margin: 10px; */
+    padding: 5px;
 }
 
 @media (max-width:768px) {
     .box-shadow{
         position: relative;
-        width: 44%;
+        /* width: 44%; */
         margin: 1 !important;
     }
     .box-shadow .middle {
@@ -1578,8 +1525,12 @@ select{
 .category-detail .mySwiper4 {
     height: 7% !important;
     box-sizing: border-box;
-    padding: 1;
+    padding: 5px;
     border-radius: 10px !important;
+}
+
+.category-detail .mySwiper4 img{
+    border: 3px solid var(--colorText);
 }
 
 @media (max-width:768px) {
@@ -1588,6 +1539,11 @@ select{
         box-sizing: border-box;
         padding: 1;
         border-radius: 10px !important;
+    }
+    .price-for-detail{
+        margin-right: 70px !important;
+        margin-top:0 !important;
+        font-size: 25px !important;
     }
 }
 
@@ -1601,6 +1557,15 @@ select{
     width: 100%;
     height: 400px !important;
     object-fit: cover;
+}
+
+@media (max-width:768px) {
+    .category-detail .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 250px !important;
+        object-fit: cover;
+    }
 }
 
 .description{

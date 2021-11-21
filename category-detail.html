@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- <link rel="stylesheet" href="./css/style-rtl.css"> -->
     <title>El-Baraka</title>
+
+
+<style>
+    @media (min-width:768px) {
+        .box-shadow{
+            width: 30% !important;
+        }
+    }
+</style>
+
 </head>
 
 <body>
@@ -298,7 +308,7 @@
                         <!-- <div class="container"> -->
                         <div class="row">
 
-                            <div class="box-shadow shadow-lg" style="width:30%">
+                            <div class="box-shadow shadow-lg">
                                 <a href="./category-detail.html">
                                     <img src="./images/appartments/apartment-1.jpeg" alt="favourite" loading="lazy"
                                         class="image" style="width:100%">
@@ -324,7 +334,7 @@
                                 </div>
                             </div>
 
-                            <div class="box-shadow shadow-lg" style="width:30%">
+                            <div class="box-shadow shadow-lg">
                                 <a href="./category-detail.html">
                                     <img src="./images/appartments/apartment-1.jpeg" alt="favourite" loading="lazy"
                                         class="image" style="width:100%">
@@ -350,7 +360,7 @@
                                 </div>
                             </div>
 
-                            <div class="box-shadow shadow-lg" style="width:30%">
+                            <div class="box-shadow shadow-lg">
                                 <a href="./category-detail.html">
                                     <img src="./images/appartments/apartment-1.jpeg" alt="favourite" loading="lazy"
                                         class="image" style="width:100%">
@@ -444,12 +454,12 @@
 
                 <div class="col-md-3 col-sm-12">
                     <form action="">
-                        <div class="input-group mb-2 mt-2">
+                        <!-- <div class="input-group mb-2 mt-2">
                             <input type="text" class="form-control" placeholder="Search"
                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
-                        </div>
+                        </div> -->
 
-                        <div class="item">
+                        <div class="item mt-3">
                             <div class="item-header">
                                 <p class="title">
                                     <label for="browser" class="form-label text-dark">Country</label>
@@ -481,6 +491,7 @@
                             </div>
                         </div>
 
+
                         <div class="item">
                             <div class="item-header">
                                 <p class="title">
@@ -495,7 +506,7 @@
                                     <option value="Villas" class="options">Villas</option>
                                 </select>
                             </div>
-                        </div>
+                        </div> 
 
                         <div class="item">
                             <div class="item-header">
@@ -803,6 +814,23 @@
                             </div>
                         </div>
 
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="number" class="form-control" id="Min" placeholder="Enter Your Name"
+                                        name="name" required>
+                                    <label for="name">Min Price</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="number" class="form-control" id="Max" placeholder="Enter Your Name"
+                                        name="name" required>
+                                    <label for="name">Max Price</label>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -813,7 +841,6 @@
             </div>
         </div>
     </div>
-
     <!-- start  modal Login Now -->
     <div class="modal fade modal-dialog" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
