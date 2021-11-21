@@ -630,7 +630,7 @@ select{
         position: relative;
         bottom: -1% !important;
         color: white !important;
-        display: none !important;
+        /* display: none !important; */
     }
     .overlay p {
         margin: 0;
@@ -641,7 +641,7 @@ select{
         font-weight: 300;
         line-height: 20px;
         letter-spacing: 0px;
-        display: none !important;
+        /* display: none !important; */
     }
 
     .overlay .select{
@@ -649,6 +649,7 @@ select{
         bottom: -1% !important;
         background: rgba(0, 28, 56, 0.6);
         padding: 30px;
+        width: 100vw !important;
         border-radius: 1%;
         border-radius: 10px;
     }
@@ -1064,10 +1065,11 @@ select{
 @media (max-width:768px) {
     .gallery-widget li
 {
-	margin: 0.5rem;
+    margin-top: 20px !important;
+	margin: 0.3rem;
 	border: 1px solid silver;
 	padding: 0.5rem;
-	flex: 0 0 calc(100% - 3rem - 0px);
+	flex: 0 0 calc(100% - 0rem - 54px);
 	width: calc(50% - 2rem - 2px);
 	display: flex;
 	flex-flow: column nowrap;
@@ -1426,6 +1428,21 @@ select{
 
 
 /* start compare */
+
+@media (max-width:768px) {
+    @media (max-width:768px) {
+        .in-mobile {
+            width: 6rem !important;
+        }
+        .color{
+            margin-bottom: 10px !important;
+        }
+        .list-group{
+            font-size: 13px !important;
+            white-space: nowrap !important;
+        }
+    }
+}
 
 .list-group .color{
     background-color: var(--colorText) !important;

@@ -632,7 +632,7 @@ select{
         position: relative;
         bottom: 0%;
         color: white !important;
-        display: none !important;
+        /* display: none !important; */
     }
     .overlay p {
         margin: 0;
@@ -643,13 +643,14 @@ select{
         font-weight: 300;
         line-height: 20px;
         letter-spacing: 0px;
-        display: none !important;
+        /* display: none !important; */
     }
     .overlay .select{
         position: relative;
         bottom: -1%;
         background: rgba(0, 28, 56, 0.6);
         padding: 30px;
+        width: 100vw !important;
         border-radius: 1%;
         border-radius: 10px;
     }
@@ -1416,6 +1417,21 @@ select{
 /* end favourite */
 
 /* start compare */
+
+@media (max-width:768px) {
+    @media (max-width:768px) {
+        .in-mobile {
+            width: 6rem !important;
+        }
+        .color{
+            margin-bottom: 10px !important;
+        }
+        .list-group{
+            font-size: 13px !important;
+            white-space: nowrap !important;
+        }
+    }
+}
 
 .list-group .color{
     background-color: var(--colorText) !important;
