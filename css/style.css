@@ -432,6 +432,12 @@ background-color: white !important;
 
 .dropdown:hover .dropdown-content {display: block;}
 
+.image-profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
 /* end navbar canvas */
 
 /* start design for button in modal */
@@ -1643,6 +1649,77 @@ select{
 max-width: 800px;
 }
 /* end category details */
+
+/* start page profile */
+/* .form-for-profile{
+background-color: var(--colorText);
+padding: 40px !important;
+border-radius: 10px !important;
+max-width: 800px;
+} */
+
+/* .profile input{
+    background-color: var(--colorText);
+}
+
+.profile input:focus{
+    background-color: var(--colorText);
+}
+
+.profile label{
+    color:white !important;
+} */
+
+.box-profile{
+    height: 300px !important;
+    border-radius: 10px;
+    position: relative;
+}
+
+.image-background{
+width: 100%;
+height: 200px;
+border-radius: 10px;
+margin-top: 20px;
+}
+
+.img-profile{
+    position: absolute;
+    border-radius: 50%;
+    top: 35%;
+    left: 28%;
+    border: 5px solid white !important;
+}
+
+.name-profile{
+    position: absolute;
+    top: 75%;
+    left: 35%;
+    margin-top: 30px !important;
+}
+
+
+.links .list-group-item{
+cursor: pointer;
+}
+
+@media (max-width:768px) {
+    .img-profile{
+        position: absolute;
+        border-radius: 50%;
+        top: 35%;
+        left: 30%;
+        border: 5px solid white !important;
+    }
+    .name-profile{
+        position: absolute;
+        top: 78%;
+        left: 37%;
+    }
+    
+}
+
+/* end page profile */
 
 
 
