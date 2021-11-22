@@ -1441,6 +1441,10 @@ select{
             font-size: 13px !important;
             white-space: nowrap !important;
         }
+        .version-mobile{
+            font-size: 12px !important;
+            margin-top: 40px;
+        }
     }
 }
 
