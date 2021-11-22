@@ -722,6 +722,15 @@ select{
     transition: .4s all ease-out;
     color: white !important;
 } 
+
+.text-desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
 /* end for rent */
 
 /* start testimonilas */

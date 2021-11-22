@@ -711,6 +711,27 @@ select{
 .for-rent{
     margin-top: 30px;
 }
+
+.btn-card {
+    background: none !important;
+    border: 1px solid var(--colorText);
+    border-radius: 30px;
+}
+
+.btn-card:hover{
+    background-color: var(--colorText) !important;
+    transition: .4s all ease-out;
+    color: white !important;
+} 
+
+.text-desc{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+            line-clamp: 1; 
+    -webkit-box-orient: vertical;
+}
 /* end for rent */
 
 /* start testimonilas */
@@ -733,6 +754,7 @@ select{
 
 .testimonials .swiper-slide {
     /* text-align: center; */
+    padding: 15px;
     font-size: 18px;
     background: rgba(0, 28, 56, 0.6);
     border-radius: 10px !important;
@@ -750,7 +772,7 @@ select{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    height: 200px !important;
+    /* height: 200px !important; */
 }
 
 .testimonials .swiper-slide img {
@@ -1025,6 +1047,7 @@ select{
 
 /* start categories */
 
+
 .fa-th-list:active{
     color: var(--colorText) !important;
 }
@@ -1055,18 +1078,20 @@ select{
 @media (max-width:768px) {
     .gallery-widget li
 {
-	margin: 0.5rem;
+    margin-top: 20px !important;
+	margin: 0.3rem;
 	border: 1px solid silver;
 	padding: 0.5rem;
-	flex: 0 0 calc(50% - 2rem - 2px);
+	flex: 0 0 calc(100% - 0rem - 54px);
 	width: calc(50% - 2rem - 2px);
 	display: flex;
 	flex-flow: column nowrap;
+    margin-right: 38px;
 }
 
 .box-for-categories .add-to-compare{
     position: absolute;
-    top: 46%;
+    top: 43%;
     left: 84% !important;
     background-color: black;
     width: 30px;
@@ -1079,7 +1104,7 @@ select{
 
 .box-for-categories .add-to-favourite{
     position: absolute;
-    top: 60%;
+    top: 56%;
     left: 84% !important;
     background-color: black;
     width: 30px;
@@ -1134,10 +1159,11 @@ select{
 	margin-right: 1rem;
 }
 
+
 .sell{
     position: absolute;
     top: 8%;
-    right: 8%;
+    left: 8%;
     background-color: var(--colorText);
     /* padding: 10px 14px; */
     width: 50px;
@@ -1152,8 +1178,8 @@ select{
 
 .box-for-categories .add-to-compare{
     position: absolute;
-    top: 43%;
-    right: 80%;
+    top: 46%;
+    left: 80%;
     background-color: black;
     width: 30px;
     height: 30px;
@@ -1170,8 +1196,8 @@ select{
 
 .box-for-categories .add-to-favourite{
     position: absolute;
-    top: 56%;
-    right: 80%;
+    top: 60%;
+    left: 80%;
     background-color: black;
     width: 30px;
     height: 29px;
@@ -1190,7 +1216,7 @@ select{
 .gallery-widget.list-view .sell{
     position: absolute;
     top: 8%;
-    right: 3%;
+    left: 1%;
     background-color: var(--colorText);
     /* padding: 10px 14px; */
     width: 50px;
@@ -1206,7 +1232,7 @@ select{
 .gallery-widget.list-view .add-to-compare{
     position: absolute;
     top: 51%;
-    right: 37%;
+    left: 35%;
     background-color: black;
     width: 30px;
     height: 30px;
@@ -1223,7 +1249,7 @@ select{
 .gallery-widget.list-view .add-to-favourite{
     position: absolute;
     top: 67%;
-    right: 37%;
+    left: 35%;
     background-color: black;
     width: 30px;
     height: 30px;
@@ -1241,7 +1267,7 @@ select{
 .gallery-widget.list-view .view-for-list{
     /* flex-flow: column nowrap; */
     margin-top: 30px;
-    margin-right: -230px;
+    margin-left: -230px;
 }
 
 /* start side bar drop down categories */
@@ -1291,7 +1317,6 @@ select{
     padding: 5px;
     border-radius: 10%;
 }
-
 /* end cattegories */
 
 
