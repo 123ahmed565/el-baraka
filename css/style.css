@@ -882,8 +882,8 @@ select{
 
 @media (max-width:768px) {
     .questions_annswers img {
-        width: 350px;
-        height: 300px;
+        width: 100%;
+        height: 250px;
         margin: auto;
         display: block;
     }
