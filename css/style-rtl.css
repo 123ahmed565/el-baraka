@@ -776,6 +776,7 @@ select{
 .testimonials{
     background-image: url("../images/slider/banner.png");
     margin-top: 30px;
+    height: 200px;
 }
 
 .testimonials .swiper {
@@ -819,6 +820,7 @@ select{
     -webkit-align-items: center;
     align-items: center;
     height: auto;
+    margin-top: 35px !important;
 }
 
 .testimonials .swiper-slide img {
