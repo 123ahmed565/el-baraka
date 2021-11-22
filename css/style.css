@@ -469,6 +469,37 @@ background-color: white !important;
 }
 /* end design for button in modal */
 
+/* start design for modal search input search */
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: black !important;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: none !important;
+    background: none !important;
+    border-radius: 10px !important;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 19px;
+}
+/* end design for modal search input search */
+
 /* start slider */
 .big-image {
     height: 100vh;
@@ -1612,5 +1643,7 @@ select{
 max-width: 800px;
 }
 /* end category details */
+
+
 
 
