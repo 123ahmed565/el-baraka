@@ -786,6 +786,14 @@ select{
         width: 100%;
         height: 100%;
     }
+    .testimonials .swiper-slide img {
+        vertical-align: middle;
+        width: 25vw !important;
+        height: 12vh !important;
+        padding: 3px;
+        border-radius: 50%;
+        border: 3px solid var(--colorText);
+    }
 }
 
 .testimonials .swiper-slide {
@@ -808,13 +816,13 @@ select{
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    /* height: 200px !important; */
+    height: auto !important;
 }
 
 .testimonials .swiper-slide img {
     vertical-align: middle;
-    width: 100px;
-    height: 100px;
+    width: 20vw;
+    height: 15vh;
     padding: 3px;
     border-radius: 50%;
     border: 3px solid var(--colorText);
@@ -968,8 +976,8 @@ select{
 /* start about us */
 @media (max-width:768px) {
     .about-us img{
-    width: 350px;
-    height: 300px;
+    width: 100%;
+    height: 250px;
     margin: auto;
     display: block;
     }
