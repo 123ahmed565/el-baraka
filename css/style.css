@@ -879,6 +879,10 @@ select{
     box-shadow: none !important;
 }
 
+.img-float{
+    float: right !important;
+}
+
 @media (max-width:768px) {
     .questions_annswers img {
         width: 350px;
@@ -886,8 +890,10 @@ select{
         margin: auto;
         display: block;
     }
+    .img-float{
+        float: none !important;
+    }
 }
-
 /* end questions and answers*/
 
 /* start footer */
@@ -1173,7 +1179,7 @@ select{
 
 .box-for-categories .add-to-compare{
     position: absolute;
-    top: 46%;
+    top: 50%;
     left: 80%;
     background-color: black;
     width: 30px;
@@ -1191,7 +1197,7 @@ select{
 
 .box-for-categories .add-to-favourite{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 80%;
     background-color: black;
     width: 30px;
@@ -1226,7 +1232,7 @@ select{
 
 .gallery-widget.list-view .add-to-compare{
     position: absolute;
-    top: 51%;
+    top: 61%;
     left: 35%;
     background-color: black;
     width: 30px;
@@ -1243,7 +1249,7 @@ select{
 
 .gallery-widget.list-view .add-to-favourite{
     position: absolute;
-    top: 67%;
+    top: 79%;
     left: 35%;
     background-color: black;
     width: 30px;
@@ -1612,10 +1618,5 @@ select{
 max-width: 800px;
 }
 /* end category details */
-
-
-
-
-
 
 
