@@ -884,9 +884,6 @@ select{
     margin-left: 0 !important;
 }
 
-.img-float{
-    float: left !important;
-}
 
 @media (max-width:768px) {
     .questions_annswers img {
@@ -894,9 +891,6 @@ select{
         height: 300px;
         margin: auto;
         display: block;
-    }
-    .img-float{
-        float: none !important;
     }
 }
 
