@@ -791,8 +791,8 @@ select{
     }
     .testimonials .swiper-slide img {
         vertical-align: middle;
-        width: 25vw !important;
-        height: 12vh !important;
+        width: 27vw !important;
+        height: 13vh !important;
         padding: 3px;
         border-radius: 50%;
         border: 3px solid var(--colorText);
