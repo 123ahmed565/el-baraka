@@ -473,6 +473,10 @@ background-color: white !important;
     outline: none !important;
     border-radius: 4%;
 }
+
+.socail-modal{
+margin-left: -30px !important;
+}
 /* end design for button in modal */
 
 /* start design for modal search input search */
@@ -692,10 +696,9 @@ select{
     }
     .range-slide {
         position: relative;
-        /* margin: 40px; */
         height: 1px;
         width: 240px;
-        left: 14%;
+        left: 14% !important;
         top: 15%;
     }
 }

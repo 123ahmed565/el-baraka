@@ -479,6 +479,10 @@ input[type=submit]:hover {
     outline: none !important;
     border-radius: 4%;
 }
+
+.socail-modal{
+    margin-left: -30px !important;
+    }
 /* end design for button in modal */
 
 /* start design for modal search input search */
