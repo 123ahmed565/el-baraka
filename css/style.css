@@ -233,12 +233,12 @@ i{
 }
 
 .social-icon i{
-    color: white !important;
+    color: var(--colorText) !important;
     padding: 7px;
     font-size: 14px;
 }
 .social-icon i:hover{
-    background-color: var(--primary);
+    background-color: var(--colorText);
     border-radius: 50%;
     color:white !important;
     transition: .3s all ease;
