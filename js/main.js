@@ -178,7 +178,7 @@ $(".add-to-compare").click(function () {
   toastr.success("add to compare");
 });
 
-$(".heart-this-please").click(function () {
+$(".add-to-heart").click(function () {
   toastr.success("add to favourit");
 });
 

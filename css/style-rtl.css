@@ -1100,16 +1100,6 @@ select{
 
 /* start categories */
 
-
-.fa-th-list:active{
-    color: var(--colorText) !important;
-}
-
-.fa-th-large:active{
-    color: var(--colorText) !important; 
-}
-
-/* grid view (default) */
 .gallery-widget ul
 {
 	display: flex;
@@ -1119,7 +1109,6 @@ select{
 .gallery-widget li
 {
 	margin: 0.5rem;
-	/* border: 1px solid silver; */
 	padding: 0.5rem;
 	flex: 0 0 calc(33% - 2rem - 2px);
 	width: calc(33% - 2rem - 2px);
@@ -1128,64 +1117,12 @@ select{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-@media (max-width:768px) {
-    .gallery-widget li
-{
-    margin-top: 20px !important;
-	margin: 0.3rem;
-	border: 1px solid silver;
-	padding: 0.5rem;
-	flex: 0 0 calc(100% - 0rem - 54px);
-	width: calc(50% - 2rem - 2px);
-	display: flex;
-	flex-flow: column nowrap;
-    margin-right: 38px;
-}
-
-.box-for-categories .add-to-compare{
-    position: absolute;
-    top: 50%;
-    left: 84% !important;
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 17px;
-}
-
-.box-for-categories .add-to-favourite{
-    position: absolute;
-    top: 65%;
-    left: 84% !important;
-    background-color: black;
-    width: 30px;
-    height: 29px;
-    line-height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 19px;
-}
-
-}
-
-.gallery-widget img
-{
-	width: 100%;
-}
 
 .gallery-widget p
 {
-	/* margin: 0.5rem 0 0; */
-	/* display: flex; */
 	flex-flow: column nowrap;
 }
 
-.gallery-widget small
-{
-	margin: 0.5rem 0 0;	
-}
 
 /* list view (changes) */
 
@@ -1210,118 +1147,122 @@ select{
 	flex: 0 0 20rem;
 	align-self: flex-start;
 	margin-right: 1rem;
+    padding: 10px;
 }
 
 
-.sell{
+
+.box-for-categories .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 180px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.box-for-categories .middle {
+    transition: .5s ease;
+    opacity: 0;
     position: absolute;
-    top: 8%;
-    left: 8%;
-    background-color: var(--colorText);
-    /* padding: 10px 14px; */
-    width: 50px;
-    height: 40px;
-    line-height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
-    border-radius: 10px;
-    font-weight: 300;
-    font-size: 14px;
+}
+
+.box-for-categories:hover .image {
+    opacity: 0.3;
+}
+
+.box-for-categories:hover .middle {
+    opacity: 1;
+}
+
+.box-for-categories .icons .add-to-heart{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: white !important;
+    cursor: pointer;
+}
+
+.box-for-categories .icons .add-to-compare{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    color: white !important;
+    cursor: pointer;
+}
+
+.box-for-categories .icons-mobile .add-to-heart{
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white !important; 
+}
+
+.box-for-categories .icons-mobile .add-to-compare{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
     color: white !important;
 }
 
-.box-for-categories .add-to-compare{
-    position: absolute;
-    top: 46%;
-    left: 80%;
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 17px;
+.gallery-widget.list-view .icons{
+    position: relative;
+    right: 320%;
 }
 
-.box-for-categories .add-to-compare:hover{
-    background-color: var(--colorText);
-    color: white;
-}
-
-.box-for-categories .add-to-favourite{
-    position: absolute;
-    top: 60%;
-    left: 80%;
-    background-color: black;
-    width: 30px;
-    height: 29px;
-    line-height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 19px;
-}
-
-.box-for-categories .add-to-favourite:hover{
-    background-color: var(--colorText);
-    color: white;
+@media (max-width:768px) {
+    .box-for-categories .middle {
+        display: none;
+    }
+    .box-for-categories:hover .image {
+        opacity: 1 !important;
+    }
+    .box-for-categories .icons-mobile{
+        position: absolute;
+        top: 35% !important;
+        left: 3%;
+    }
+    .box-for-categories  .image {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: 150px !important;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
 }
 
 
-.gallery-widget.list-view .sell{
-    position: absolute;
-    top: 8%;
-    left: 1%;
-    background-color: var(--colorText);
-    /* padding: 10px 14px; */
-    width: 50px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: 300;
-    font-size: 14px;
-    color: white !important;
+@media (max-width:768px) {
+    .gallery-widget li
+    {
+        margin-top: 20px !important;
+        margin: 0.3rem !important;
+        border: 1px solid silver !important;
+        padding: 0.5rem !important;
+        flex: 0 0 calc(100% - 0rem - 54px) !important;
+        width: calc(50% - 2rem - 2px) !important;
+        display: flex !important;
+        flex-flow: column nowrap !important;
+        margin-right: 44px !important;
+    }
 }
 
-.gallery-widget.list-view .add-to-compare{
-    position: absolute;
-    top: 61%;
-    left: 35%;
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    text-align: center;
-}
-
-.gallery-widget.list-view .add-to-compare:hover{
-    background-color: var(--colorText);
-    color: white;
-}
-
-.gallery-widget.list-view .add-to-favourite{
-    position: absolute;
-    top: 79%;
-    left: 35%;
-    background-color: black;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 17px;
-}
-
-.gallery-widget.list-view .add-to-favourite:hover{
-    background-color: var(--colorText);
-    color: white;
-}
-
-.gallery-widget.list-view .view-for-list{
-    /* flex-flow: column nowrap; */
-    margin-top: 30px;
-    margin-left: -230px;
-}
 
 /* start side bar drop down categories */
 .item {
@@ -1393,7 +1334,7 @@ select{
     .box-shadow:hover .image {
         opacity: 1 !important;
     }
-    .icons-mobile{
+    .box-shadow .icons-mobile{
         position: absolute;
         /* display: flex; */
         top: 31% !important;
@@ -1437,7 +1378,7 @@ select{
     opacity: 1;
 }
 
-.icons .add-to-trash{
+.box-shadow .icons .add-to-trash{
     background-color: red;
     width: 30px;
     height: 30px;
@@ -1447,7 +1388,7 @@ select{
     cursor: pointer;
 }
 
-.icons .add-to-compare{
+.box-shadow .icons .add-to-compare{
     background-color: black;
     width: 30px;
     height: 30px;
@@ -1457,13 +1398,13 @@ select{
     cursor: pointer;
 }
 
-.icons-mobile{
+.box-shadow .icons-mobile{
     position: absolute;
     top: 55%;
     right: 8%;
 }
 
-.icons-mobile .fa-trash-alt{
+.box-shadow .icons-mobile .fa-trash-alt{
     background-color: red;
     width: 30px;
     height: 30px;
@@ -1473,7 +1414,7 @@ select{
     color: white !important; 
 }
 
-.icons-mobile .fa-heart{
+.box-shadow .icons-mobile .fa-heart{
     background-color: red;
     width: 30px;
     height: 30px;
@@ -1483,7 +1424,7 @@ select{
     color: white !important; 
 }
 
-.icons-mobile .add-to-compare{
+.box-shadow .icons-mobile .add-to-compare{
     background-color: black;
     width: 30px;
     height: 30px;
@@ -1676,25 +1617,6 @@ max-width: 800px;
 
 
 /* start page profile */
-/* .form-for-profile{
-background-color: var(--colorText);
-padding: 40px !important;
-border-radius: 10px !important;
-max-width: 800px;
-} */
-
-/* .profile input{
-    background-color: var(--colorText);
-}
-
-.profile input:focus{
-    background-color: var(--colorText);
-}
-
-.profile label{
-    color:white !important;
-} */
-
 .box-profile{
     height: 300px !important;
     border-radius: 10px;
