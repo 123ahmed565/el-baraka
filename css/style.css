@@ -1620,7 +1620,7 @@ select{
         box-sizing: border-box;
         padding: 5px;
         border-radius: 10px !important;
-        width: 120% !important;
+        width: 100% !important;
     }
     .price-for-detail{
         margin-left: 70px !important;
