@@ -209,6 +209,14 @@ var swiper2 = new Swiper(".mySwiper3", {
 
 
 
+// fuunction delete one card of compare
+$(document).on('click','.deleted',function(){
+  // var id=$(this).attr('alt');
+  $('.delete-compare1').remove();
+});
+
+
+
 
 
 
