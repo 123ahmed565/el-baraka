@@ -245,9 +245,9 @@ i{
 }
 
 
-img:hover{
+/* img:hover{
     opacity: .8;
-}
+} */
 
 span{
     color: #646464 !important;
@@ -526,7 +526,7 @@ input[type=submit]:hover {
     background-image: url("../images/slider/banner.png");
 }
 
-.overlay {
+.big-image .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -540,7 +540,7 @@ input[type=submit]:hover {
     flex-direction: column;
 }
 
-.overlay h1 {
+.big-image .overlay h1 {
     font-size: 60px;
     font-weight: 600;
     line-height: 70px;
@@ -550,7 +550,7 @@ input[type=submit]:hover {
     color: white !important;
 }
 
-.overlay p {
+.big-image .overlay p {
     margin: 0;
     position: relative;
     bottom: 10%;
@@ -561,7 +561,7 @@ input[type=submit]:hover {
     letter-spacing: 0px;
 }
 
-.overlay .select{
+.big-image .overlay .select{
     position: relative;
     bottom: 3%;
     background: rgba(0, 28, 56, 0.6);
@@ -666,7 +666,7 @@ select{
 
 
 @media (max-width:768px) {
-    .overlay h1 {
+    .big-image  .overlay h1 {
         font-size: 30px;
         font-weight: 500;
         line-height: 40px;
@@ -676,7 +676,7 @@ select{
         color: white !important;
         /* display: none !important; */
     }
-    .overlay p {
+    .big-image  .overlay p {
         margin: 0;
         font-size: 12px;
         position: relative;
@@ -687,7 +687,7 @@ select{
         letter-spacing: 0px;
         /* display: none !important; */
     }
-    .overlay .select{
+    .big-image  .overlay .select{
         position: relative;
         bottom: -1%;
         background: rgba(0, 28, 56, 0.6);
@@ -873,6 +873,62 @@ select{
 }
 
 /* end testimonilas */
+
+
+/* start last projects */
+.box-overlay-title {
+    position: relative;
+    width: 100%;
+}
+
+.box-overlay-title .image {
+    display: block;
+    width: 100%;
+    height: 300px;
+}
+
+.box-overlay-title  .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.box-overlay-title:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width:768px) {
+    .box-overlay-title  .overlay {
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+        opacity:1;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+    .box-overlay-title .image {
+        display: block;
+        width: 100%;
+        height: 230px;
+    }
+}
+
+/* end last projects */
 
 /* start our team  */
 .our-team{
