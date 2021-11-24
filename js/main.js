@@ -146,14 +146,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// start category detail page
-// var swiper = new Swiper(".mySwiper3", {
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
 
 // Start Taostr js to alert
 toastr.options = {
@@ -215,6 +207,35 @@ $(document).on('click','.deleted',function(){
   $('.delete-compare'+"."+id).remove();
 });
 
+
+// start swiper for succes partner
+var swiper = new Swiper(".mySwiper5", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  grabCursor:true,
+  freeMode: true,
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints:{
+    0: {
+      slidesPerView: 2.5,
+      spaceBetween: 15
+  
+    },
+    600: {
+      slidesPerView: 3.5,
+      spaceBetween: 20
+    },
+    1000: {
+      slidesPerView: 5,
+      spaceBetween: 20
+    },
+      
+  }
+});
 
 
 

@@ -1725,6 +1725,51 @@ cursor: pointer;
 /* end last project details */
 
 
+/* start success partner */
+.success-partners .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.success-partners .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width:768px) {
+    .text-for-edite{
+        font-size: 20px;
+        font-weight: bold;
+        width: 270px !important;
+    }
+    .success-partners .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 120px;
+        object-fit: cover;
+    }
+}
+/* end success partner */
+
+
 
 
 
