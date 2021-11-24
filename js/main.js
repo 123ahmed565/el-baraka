@@ -80,8 +80,19 @@ for (var i = 0, controlViewElement; i < galleryWidgetElements.length; i++)
 
 function toggleView(galleryWidgetElement)
 {
+  // if($('.control-view').hasClass('fa-th-large')){
+  //   $(".control-view i").removeClass('fa-th-large');
+  //   $(".control-view i").addClass('fa-th-list');
+  // }
+  // else{
+  //   $(".control-view i").addClass('fa-th-list');
+  //   $(".control-view i").removeClass('fa-th-large');
+  // }
 	galleryWidgetElement.classList.toggle('list-view');
 }
+
+
+
 
 
 // start side bar drop down select page categoreis
@@ -179,7 +190,7 @@ $(".fa-trash-alt").click(function () {
 });
 
 
-
+// for gallery
 var swiper = new Swiper(".mySwiper4", {
   loop: true,
   spaceBetween: 10,

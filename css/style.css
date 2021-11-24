@@ -1154,13 +1154,14 @@ select{
     .gallery-widget li
     {
         margin-top: 20px !important;
-        margin: 0.3rem !important;
+        /* margin: 0.3rem !important; */
         border: 1px solid silver !important;
         padding: 0.5rem !important;
-        flex: 0 0 calc(100% - 0rem - 54px) !important;
+        flex: 0 0 calc(98% - -1rem - 0px) !important;
         width: calc(50% - 2rem - 2px) !important;
         display: flex !important;
         flex-flow: column nowrap !important;
+        margin-left: -21px !important;
     }
 }
 
@@ -1298,14 +1299,14 @@ select{
     }
     .box-for-categories .icons-mobile{
         position: absolute;
-        top: 33% !important;
-        left: 80%;
+        top: 43% !important;
+        left: 81%;
     }
     .box-for-categories  .image {
         opacity: 1;
         display: block;
         width: 100%;
-        height: 150px !important;
+        height: 190px !important;
         transition: .5s ease;
         backface-visibility: hidden;
     }
