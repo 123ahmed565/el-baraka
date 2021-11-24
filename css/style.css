@@ -424,7 +424,7 @@ background-color: white !important;
     text-decoration: none;
     display: block;
     font-size: 15px;
-    text-align: center;
+    /* text-align: center; */
     white-space: nowrap;
 }
 
@@ -1770,6 +1770,19 @@ cursor: pointer;
 /* end success partner */
 
 
+/* start display icon profile none in mobile */
+@media (max-width:768px) {
+    .for-mobile-none{
+        display: none !important;
+    }
+}
+
+@media (min-width:768px) {
+    .log-out-mobile{
+        display: none !important;
+    }
+}
+/* end display icon profile none in mobile */
 
 
 
