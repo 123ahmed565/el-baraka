@@ -74,20 +74,20 @@ for (var i = 0, controlViewElement; i < galleryWidgetElements.length; i++)
 	
 	controlViewElement.addEventListener('click', function ()
 	{
+    if($('.control-view').hasClass('fa-th-large')){
+      $(".control-view i").removeClass('fa-th-large');
+      $(".control-view i").addClass('fa-th-list');
+    }
+    else{
+      $(".control-view i").removeClass('fa-th-large');
+      $(".control-view i").addClass('fa-th-list');
+    }
 		toggleView(this.galleryWidgetElement);
 	});
 }
 
 function toggleView(galleryWidgetElement)
 {
-  // if($('.control-view').hasClass('fa-th-large')){
-  //   $(".control-view i").removeClass('fa-th-large');
-  //   $(".control-view i").addClass('fa-th-list');
-  // }
-  // else{
-  //   $(".control-view i").addClass('fa-th-list');
-  //   $(".control-view i").removeClass('fa-th-large');
-  // }
 	galleryWidgetElement.classList.toggle('list-view');
 }
 
