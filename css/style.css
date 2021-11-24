@@ -1605,6 +1605,7 @@ select{
 
 .category-detail .mySwiper4 {
     height: 5% !important;
+    /* width: 700px !important; */
     box-sizing: border-box;
     padding: 5px;
     border-radius: 10px !important;
@@ -1631,7 +1632,7 @@ select{
 }
 
 .category-detail .mySwiper4 .swiper-slide {
-    width: 20% !important;
+    width: 17% !important;
     height: 100px;
 }
 
@@ -1648,6 +1649,10 @@ select{
         width: 100%;
         height: 250px !important;
         object-fit: cover;
+    }
+    .category-detail .mySwiper4 .swiper-slide {
+        width: 25% !important;
+        height: 100px;
     }
 }
 
