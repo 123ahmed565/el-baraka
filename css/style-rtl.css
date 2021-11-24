@@ -1434,7 +1434,7 @@ select{
     opacity: 1;
 }
 
-.box-shadow .icons .add-to-trash{
+.box-shadow .icons .add-to-heart{
     background-color: red;
     width: 30px;
     height: 30px;
@@ -1460,7 +1460,7 @@ select{
     right: 8%;
 }
 
-.box-shadow .icons-mobile .fa-trash-alt{
+/* .box-shadow .icons-mobile .fa-trash-alt{
     background-color: red;
     width: 30px;
     height: 30px;
@@ -1468,7 +1468,7 @@ select{
     text-align: center;
     border-radius: 50%;
     color: white !important; 
-}
+} */
 
 .box-shadow .icons-mobile .fa-heart{
     background-color: red;
