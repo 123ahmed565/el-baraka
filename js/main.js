@@ -252,12 +252,6 @@ var swiper = new Swiper(".mySwiper5", {
 
 
 
-// $('.modal').on('shown.bs.modal', function (e) {
-//   $("body").addClass("modal-open")
-// });
-
-
-
 
 
 
