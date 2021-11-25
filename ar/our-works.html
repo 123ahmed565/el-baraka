@@ -12,12 +12,24 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="../css/style-rtl.css">
     <title>El-Baraka</title>
 </head>
 
 <body>
+
+    <!-- start preloader -->
+    <div class="loading-overlay">
+        <img class="image-load spinner-grow " src="../images/rm-bg-logo.png" alt="">
+    </div>
+    <!-- end preloader -->
+
+    <!-- start scroll to top -->
+    <button class="scroll-to-top"><i class="fas fa-long-arrow-alt-up text-white shadow-lg"></i></button>
+    <!-- end scroll to top -->
 
     <!-- start upperbar -->
     <div class="upperbar  d-none d-sm-block">
@@ -31,22 +43,22 @@
                 </div>
 
                 <div class="col mt-1" data-toggle="tooltip" title="info@paymac.net">
-                    <a href="" style="width: 100%; display:flex;">
-                        <i class="far fa-envelope m-1"></i>
+                    <a href="">
+                        <i class="far fa-envelope m-1" style="color: var(--colorText) !important;"></i>
                         <span class="mt-1">info@paymac.net</span>
                     </a>
                 </div>
 
                 <div class="col mt-1" data-toggle="tooltip" title="+2001012370014">
-                    <a href="tel:+201012370014" style="width: 100%; display:flex;">
-                        <i class="fas fa-phone-alt m-1"></i>
+                    <a href="tel:+201012370014">
+                        <i class="fas fa-phone-alt m-1 " style=" color: var(--colorText) !important;"></i>
                         <span class="mt-1">+2001012370014</span>
                     </a>
                 </div>
 
                 <div class="col mt-1" data-toggle="tooltip" title="9870 St Vincent Place">
-                    <a style="width: 100%; display:flex;">
-                        <i class="fas fa-map-marker-alt mt-1"></i>
+                    <a>
+                        <i class="fas fa-map-marker-alt mt-1" style="color: var(--colorText) !important;"></i>
                         <span class="m-1">9870 St Vincent Place</span>
                     </a>
                 </div>
@@ -195,93 +207,48 @@
             <!-- <h1 class="mt-5">terms & conditions</h1> -->
             <p class="mt-5" style="font-size: 30px"><a href="../ar/index.html"><i
                         class="fas fa-home fa-1x m-2"></i>Home</a><i class="fa fa-chevron-right m-2"></i>
-                <span class="text-white fa-1x">Our Works</span>
+                <span class="text-white fa-1x">Our Projects</span>
             </p>
         </div>
     </div>
     <!-- end slider -->
 
 
-    <!-- start cards for appartments -->
-    <div class="appartments">
+    <!-- start last project -->
+    <div class="last-projects">
         <div class="container">
-            <h3 class="text-center">Popular Properties</h3>
+            <h2 class="text-dark text-center mx-auto d-block fa-2x fw-light mt-5 mb-3" style="border-bottom: 3px solid var(--colorText);width: 300px;
+                letter-spacing: 4px; text-transform: uppercase;">
+                Last Projects</h2>
             <div class="row">
-                <div class="col-md-4 col-sm-12 mt-3 mt-md-0">
-                    <a href="../ar/category-detail.html">
-                        <div class="card">
-                            <img class="card-img-top" src="../images/appartments/apartment-1.jpeg"
-                                style="width: 100%; height:250px" alt="Card image" loading="lazy">
-                            <div class="card-body">
-                                <h6 class="sale">for sale</h6>
-                                <h5 class="card-title">Comfortable Apartment in Palace</h5>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p class="card-text" style="display: flex;width:100%"><i
-                                                class="fas fa-map-marker-alt text-dark m-1"></i>Popular Properties</p>
-                                    </div>
-                                    <div class="col-5">
-                                        <p class="card-text"><i class="fas fa-tag text-dark m-1"></i>Apartment</p>
-                                    </div>
-                                </div>
-                                <br>
-                                <span class="price">from $10k</span>
-                            </div>
+                <div class="col-md-4 col-sm-12 mt-4 mt-md-0">
+                    <a href="../ar/last-project-details.html">
+                        <div class="box-overlay-title">
+                            <img src="../images/appartments/apartment-1.jpeg" loading="lazy" alt="Avatar" class="image">
+                            <div class="overlay">beet el.watn</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-12 mt-3 mt-md-0">
-                    <a href="../ar/category-detail.html">
-                        <div class="card">
-                            <img class="card-img-top" src="../images/appartments/apartment-1.jpeg"
-                                style="width: 100%; height:250px" alt="Card image" loading="lazy">
-                            <div class="card-body">
-                                <h6 class="sale">for sale</h6>
-                                <h5 class="card-title">Comfortable Apartment in Palace</h5>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p class="card-text" style="display: flex;width:100%"><i
-                                                class="fas fa-map-marker-alt text-dark m-1"></i>Popular Properties</p>
-                                    </div>
-                                    <div class="col-5">
-                                        <p class="card-text"><i class="fas fa-tag text-dark m-1"></i>Apartment</p>
-                                    </div>
-                                </div>
-                                <br>
-                                <span class="price">from $10k</span>
-                            </div>
+                <div class="col-md-4 col-sm-12 mt-4 mt-md-0">
+                    <a href="../ar/last-project-details.html">
+                        <div class="box-overlay-title">
+                            <img src="../images/appartments/apartment-1.jpeg" loading="lazy" alt="Avatar" class="image">
+                            <div class="overlay">beet el.watn</div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 col-sm-12 mt-3 mt-md-0">
-                    <a href="../ar/category-detail.html">
-                        <div class="card">
-                            <img class="card-img-top" src="../images/appartments/apartment-1.jpeg"
-                                style="width: 100%; height:250px" alt="Card image" loading="lazy">
-                            <div class="card-body">
-                                <h6 class="sale">for sale</h6>
-                                <h5 class="card-title">Comfortable Apartment in Palace</h5>
-                                <div class="row">
-                                    <div class="col-7">
-                                        <p class="card-text" style="display: flex;width:100%"><i
-                                                class="fas fa-map-marker-alt text-dark m-1"></i>Popular Properties</p>
-                                    </div>
-                                    <div class="col-5">
-                                        <p class="card-text"><i class="fas fa-tag text-dark m-1"></i>Apartment</p>
-                                    </div>
-                                </div>
-                                <br>
-                                <span class="price">from $10k</span>
-                            </div>
+                <div class="col-md-4 col-sm-12 mt-4 mt-md-0">
+                    <a href="../ar/last-project-details.html">
+                        <div class="box-overlay-title">
+                            <img src="../images/appartments/apartment-1.jpeg" loading="lazy" alt="Avatar" class="image">
+                            <div class="overlay">beet el.watn</div>
                         </div>
                     </a>
                 </div>
             </div>
-            <a href="../ar/categories.html"> <button class="btn-card mx-auto d-block  mt-3 pe-4 pt-2 pb-2 ps-4">More
-                    Properties</button></a>
         </div>
     </div>
-    <!-- end cards for appartments -->
+    <!-- end last Projects -->
 
 
     <!-- start footer -->
@@ -356,6 +323,8 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
     <script src="../js/main.js"></script>
 
     <!-- start  modal register -->
@@ -366,8 +335,8 @@
                     <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form>
+                <form>
+                    <div class="modal-body">
                         <div class="mb-3">
                             <input type="text" class="form-control" id="recipient-name" placeholder="Full Name"
                                 required>
@@ -386,15 +355,16 @@
                             <input type="password" class="form-control" id="recipient-name"
                                 placeholder="Re-type Password" required>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn mx-auto d-block w-100">Register</button>
-                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn mx-auto d-block w-100">Register</button>
+                    </div>
+                </form>
+
                 <h6 class="fw-bold text-center">
                     Already have an account?
                     <span class="text-primary" data-bs-target="#exampleModal-2" data-bs-toggle="modal"
-                        data-bs-dismiss="modal">Login Now!</span>
+                        data-bs-dismiss="modal" style="cursor: pointer;">Login Now!</span>
                 </h6>
             </div>
         </div>
@@ -402,8 +372,7 @@
 
 
     <!-- start  modal search -->
-    <div class="modal fade modal-dialog" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -411,32 +380,106 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <div>
-                            <input type="text" class="form-control" id="recipient-name" placeholder="Search" required>
+                    <form action="">
+                        <!-- <input type="text" class="form-control" id="recipient-name" placeholder="Search" required> -->
+                        <div class="search">
+                            <input type="text" class="searchTerm" placeholder="Search Here.....">
+                            <button type="submit" class="searchButton">
+                                <i class="fa fa-search text-dark"></i>
+                            </button>
                         </div>
-                    </form>
+
+                        <div class="row">
+                            <div class="col">
+                                <label for="country">Country</label>
+                                <select class="selects" style="border:1px solid black !important" name="Country"
+                                    id="type">
+                                    <option value="Egypt" class="options">Egypt</option>
+                                    <option value="Italy" class="options">Italy</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="City">City</label>
+                                <select class="selects" style="border:1px solid black !important" name="" id="type">
+                                    <option value="Cairo" class="options">Cairo</option>
+                                    <option value="Giza" class="options">Giza</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label for="City">Area</label>
+                                <select class="selects" style="border:1px solid black !important" name="" id="type">
+                                    <option value="Cairo" class="options">127m</option>
+                                    <option value="Giza" class="options">300m</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="City">Project</label>
+                                <select class="selects" style="border:1px solid black !important" name="" id="type">
+                                    <option value="Cairo" class="options">octobor</option>
+                                    <option value="Giza" class="options">7th region</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+
+                                <label for="Category">Category</label>
+                                <select class="selects" style="border:1px solid black !important" name="" id="type">
+                                    <option value="Lands" class="options">Lands</option>
+                                    <option value="Appartments" class="options">Appartments</option>
+                                    <option value="Villas" class="options">Villas</option>
+                                </select>
+                            </div>
+                            <div class="col">
+
+                                <label for="Type">Type</label>
+                                <select class="selects" style="border:1px solid black !important" name="" id="type">
+                                    <option value="Sale" class="options">Sale</option>
+                                    <option value="rent" class="options">rent</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="number" class="form-control" id="Min" placeholder="Enter Your Name"
+                                        name="name" required>
+                                    <label for="name">Min Price</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating mb-3 mt-3">
+                                    <input type="number" class="form-control" id="Max" placeholder="Enter Your Name"
+                                        name="name" required>
+                                    <label for="name">Max Price</label>
+                                </div>
+                            </div>
+                        </div>
+
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn mx-auto d-block pe-3 ps-3">
-                        <i class="fas fa-search text-white"></i>
-                    </button>
+                    <input type="submit" value="Search">
                 </div>
+                </form>
             </div>
         </div>
     </div>
 
     <!-- start  modal Login Now -->
-    <div class="modal fade modal-dialog" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Welcome back!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form>
+                <form>
+                    <div class="modal-body">
                         <div>
                             <input type="text" class="form-control" id="recipient-name" placeholder="Email" required>
                         </div>
@@ -444,19 +487,20 @@
                             <input type="number" class="form-control" id="recipient-name" placeholder="Password"
                                 required>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn w-100">
-                        Login
-                    </button>
-                    <span class="text-primary fa-1x" data-bs-target="#exampleModal-3" data-bs-toggle="modal"
-                        data-bs-dismiss="modal">Forget Password?</span>
-                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn w-100">
+                            Login
+                        </button>
+                        <span class="text-primary fa-1x" data-bs-target="#exampleModal-3" data-bs-toggle="modal"
+                            data-bs-dismiss="modal">Forget Password?</span>
+                    </div>
+                </form>
+
                 <p class="fw-bold text-center text-dark">
                     Or Login with
                 </p>
-                <ul class="d-flex mx-auto d-block">
+                <ul class="d-flex justify-content-center socail-modal">
                     <li><button class="btn-facebook m-2"><i class="fab fa-facebook-f"></i>&nbsp; facebook</button></li>
                     <li><button class="btn-google m-2 "><i class="fab fa-google"></i>&nbsp; Google &nbsp;&nbsp;</button>
                     </li>
@@ -472,29 +516,30 @@
 
 
     <!-- start modal forget-password -->
-    <div class="modal fade modal-dialog" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Forget Password</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form>
+                <form>
+                    <div class="modal-body">
                         <div>
                             <input type="text" class="form-control" id="recipient-name" placeholder="Email" required>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn mx-auto d-block pe-3 ps-3">
-                        Send
-                    </button>
-                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn mx-auto d-block pe-3 ps-3">
+                            Send
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+
+
 
 
 </body>
