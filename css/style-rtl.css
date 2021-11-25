@@ -363,7 +363,7 @@ input[type=submit]:hover {
     color: white !important;
     line-height: 30px;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 .nav-item .nav-link:hover{
@@ -1178,26 +1178,6 @@ font-weight: 500;
 .filter-buttons {
     display: flex;
     margin-bottom: 20px;
-}
-
-.list-view-button,
-.grid-view-button {
-    color: rgb(19, 16, 16);
-    border: 1px solid white;
-    padding: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 3px;
-}
-
-.list-view-button:hover,
-.grid-view-button:hover {
-    background: white;
-    color: #095296;
-}
-
-.list-view-button {
-    margin-right: 10px;
 }
 
 .list {

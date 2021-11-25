@@ -71,7 +71,7 @@
             <i class="fas fa-bars  fa-2x mt-2 mr-3" data-bs-toggle="offcanvas" data-bs-target="#demo"></i>
             <a href="../ar/index.html"> <img class="logo-navbar shadow-lg" src="../images/elbaraka-logo white .png"
                     style="border-radius: 50%;" width="80" height="80" alt="image logo" loading="lazy"> </a>
-            <div class="offcanvas offcanvas-end" id="demo">
+            <div class="offcanvas offcanvas-start" id="demo">
                 <div class="offcanvas-header">
                     <h1 class="offcanvas-title"><a href="../ar/index.html"> <img src="../images/elbaraka-logo white .png"
                                 width="80" height="80" alt="image menu" loading="lazy"></a></h1>
@@ -80,42 +80,34 @@
                 <div class="offcanvas-body col justify-content-md-between">
                     <ul class="navbar-nav">
                         <li class="nav-item ">
-                            <a class="nav-link" href="../ar/index.html">Home</a>
+                            <a class="nav-link" href="../ar/index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../ar/about-us.html">About</a>
+                            <a class="nav-link" href="../ar/about-us.html">من نحن</a>
                         </li>
                         <div class="dropdown d-flex">
-                            <button class="dropbtn pe-2 ps-2">Categories</button>
+                            <button class="dropbtn pe-2 ps-2">تصنيفات</button>
                             <div class="dropdown-content">
-                                <a href="../ar/categories.html">Lands</a>
-                                <a href="../ar/categories.html">Apartments</a>
-                                <a href="../ar/categories.html">Villas</a>
+                                <a href="../ar/categories.html">اراضى</a>
+                                <a href="../ar/categories.html">شقق</a>
+                                <a href="../ar/categories.html">فيلات</a>
                             </div>
                         </div>
                         <li class="nav-item">
-                            <a class="nav-link" href="../ar/blog.html">Blog</a>
+                            <a class="nav-link" href="../ar/blog.html">مدونه</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../ar/our-works.html">Our Works</a>
+                            <a class="nav-link" href="../ar/our-works.html">مشاريعنا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../ar/contact-us.html">Contact</a>
+                            <a class="nav-link" href="../ar/contact-us.html">اتصل بنا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../ar/our-clients.html">Our Clients</a>
+                            <a class="nav-link" href="../ar/our-clients.html">عملائنا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../our-works.html">English</a>
+                            <a class="nav-link" href="../about-us.html">English</a>
                         </li>
-                        <!-- <div class="dropdown d-flex">
-                                <button class="dropbtn"><i class="fa fa-language m-1"></i>Lan</button>
-                                <div class="dropdown-content">
-                                    <a href="./ar/index.html">عربى</a>
-                                    <a href="./index.html">English</a>
-                                    <a href="#">French</a>
-                                </div>
-                            </div> -->
                     </ul>
 
                     <!-- start modal bootstrap -->
@@ -138,9 +130,57 @@
                         </a>
 
                         <button type="button" class="btn-login mt-3 mt-md-0" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal-1" data-bs-whatever="@mdo">
+                            data-bs-target="#exampleModal-1">
                             <i class="fas fa-search"></i>
                         </button>
+
+
+                            <!-- <div class="show-popup-profile">
+                                    <img src="./images/our-team/team-1.webp" alt=""
+                                        class="image-profile">
+                                <div class="popup">
+                                    <a href="./profile.html">
+                                        <span class="text-white"><i class="fas fa-user m-2"></i>PorfilePorfilePorfilePorfilePorfilePorfilePorfilePorfile PorfilePorfilePorfilePorfilePorfile</span>
+                                    </a>
+                                </div>
+                            </div> -->
+
+                            <div class="dropdown for-mobile-none">
+                                <button class="dropbtn">
+                                    <img src="../images/our-team/team-1.webp" alt=""
+                                        class="image-profile">
+                                </button>
+                                <div class="dropdown-content" style="top:30px;left:20px;min-width:170px">
+                                    <img class="mx-auto d-block mt-2" src="../images/our-team/team-1.webp" 
+                                    width="80" height="80" alt="image profile" style="border-radius:50%;">
+                                <a href="../ar/profile.html">
+                                    <i class="fas fa-user text-dark mt-3"> Profile</i>
+                                </a> 
+                                <a >
+                                    <i class="fas fa-sign-out-alt text-dark mt-3">Log Out</i>
+                                </a> 
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-7">
+                                    <a href="../ar/profile.html">
+                                    <div class="log-out-mobile" style="cursor: pointer;">
+                                        <i class="fas fa-user-alt text-dark mt-3">  My Account</i>
+                                    </div>
+                                </a>
+                                </div>
+                                <div class="col-5">
+                                    <div class="log-out-mobile" style="cursor: pointer;">
+                                        <i class="fas fa-sign-out-alt text-dark mt-3">Log Out</i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
                     </div>
 
                 </div>
@@ -250,15 +290,14 @@
             <div class="container">
                 <div class="row gy-4">
                     <div class="col follow-us footer-center-mobile">
-                        <img class="logo" src="../images/elbaraka-logo.png" alt="logo" loading="lazy" width="120" height="120">
+                        <img class="logo" src="../images/elbaraka-logo.png" alt="logo" loading="lazy" width="120"
+                            height="120">
                         <h3 class="text-white mt-4">Follow Us</h3>
-                        <div class="col-8 social-icons mx-auto mx-md-0">
+                        <div class="col-8 social-icon mx-auto mx-md-0">
                             <a href=""><i class="fab fa-facebook m-"></i></a>
                             <a href=""><i class="fab fa-twitter m-1"></i></a>
                             <a href=""><i class="fab fa-whatsapp m-1"></i></a>
                             <a href=""><i class="fab fa-instagram m-1"></i></a>
-                            <a href=""><i class="fab fa-facebook m-1"></i></a>
-                            <a href=""><i class="fab fa-twitter m-1"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-2 footer-center-mobile">
@@ -297,6 +336,7 @@
                         <h6 class="text-white ">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             Copyright &copy; 2021 All rights reserved El-Baraka
+
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </h4>
                     </div>
