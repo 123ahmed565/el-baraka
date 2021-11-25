@@ -249,6 +249,38 @@ var swiper = new Swiper(".mySwiper5", {
 });
 
 
+// start page category details appartment
+var swiper = new Swiper(".mySwiper6", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  loop:true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints:{
+    0: {
+      slidesPerView: 2,
+      spaceBetween: 15
+  
+    },
+    600: {
+      slidesPerView: 3.5,
+      spaceBetween: 20
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+      
+  }
+});
+
 
 
 
