@@ -1112,6 +1112,10 @@ select{
     }
 }
 
+.hover-one{
+    font-size: 21px;
+}
+
 .hover-one:hover{
     color: var(--colorText);
 }
