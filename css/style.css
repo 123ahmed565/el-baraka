@@ -1154,69 +1154,72 @@ select{
 
 /* start categories */
 
-@media (max-width:768px) {
-    .gallery-widget li
-    {
-        margin-top: 20px !important;
-        /* margin: 0.3rem !important; */
-        border: 1px solid silver !important;
-        padding: 0.5rem !important;
-        flex: 0 0 calc(98% - -1rem - 0px) !important;
-        width: calc(50% - 2rem - 2px) !important;
-        display: flex !important;
-        flex-flow: column nowrap !important;
-        margin-left: -21px !important;
-    }
+.fa-th-large:hover{
+color: var(--colorText) !important;
 }
 
-.gallery-widget ul
-{
-	display: flex;
-	flex-flow: row wrap;
+.fa-list:hover{
+color: var(--colorText) !important;
 }
 
-.gallery-widget li
-{
-	margin: 0.5rem;
-	padding: 0.5rem;
-	flex: 0 0 calc(33% - 2rem - 2px);
-	width: calc(33% - 2rem - 2px);
-	display: flex;
-	flex-flow: column nowrap;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.text-for-appartment{
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
-
-.gallery-widget p
-{
-	flex-flow: column nowrap;
+.filter-buttons {
+    display: flex;
+    margin-bottom: 20px;
 }
 
-
-/* list view (changes) */
-
-.gallery-widget.list-view ul
-{
-	flex-flow: column nowrap;
+.list-view-button,
+.grid-view-button {
+    color: rgb(19, 16, 16);
+    border: 1px solid white;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
 }
 
-.gallery-widget.list-view li
-{
-	margin: 0;
-	border: none;
-	border-bottom: 1px solid silver;
-	padding: 0.5rem 0;
-	flex-flow: row nowrap;
-	flex: 0 0 100%;
-	width: 100%;
+.list-view-button:hover,
+.grid-view-button:hover {
+    background: white;
+    color: #095296;
 }
 
-.gallery-widget.list-view img
-{
-	flex: 0 0 20rem;
-	align-self: flex-start;
-	margin-right: 1rem;
+.list-view-button {
+    margin-right: 10px;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.list.list-view-filter {
+    flex-flow: column wrap !important;
+}
+
+.list.list-view-filter li {
+    padding: 20px;
+    display: flex; 
+    /* this action make list be resposive in pc */
+}
+
+.list.grid-view-filter {
+    flex-flow: row wrap;
+}
+
+.list.grid-view-filter li {
+    width: calc(55% - 210px);
     padding: 10px;
+    /* margin-right: 10px; */
+    margin: 5px;
 }
 
 
@@ -1289,12 +1292,28 @@ select{
     color: white !important;
 }
 
-.gallery-widget.list-view .icons{
+.list.list-view-filter .icons{
     position: relative;
     left: 320%;
 }
 
 @media (max-width:768px) {
+    .filter-buttons{
+        display: none;
+    }
+
+    /* this for mobile version important */
+    .list.grid-view-filter {
+        flex-flow: column wrap !important;
+    }
+
+    .list.grid-view-filter li {
+        padding: 20px;
+        display: block; 
+        width: 100% ;
+    }
+    /* end for mobiile version important */
+
     .box-for-categories .middle {
         display: none;
     }
@@ -1304,7 +1323,7 @@ select{
     .box-for-categories .icons-mobile{
         position: absolute;
         top: 43% !important;
-        left: 81%;
+        left: 77%;
     }
     .box-for-categories  .image {
         opacity: 1;
@@ -1315,7 +1334,6 @@ select{
         backface-visibility: hidden;
     }
 }
-
 
 /* start side bar drop down categories */
 .item {
