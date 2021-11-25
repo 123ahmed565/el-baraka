@@ -1570,7 +1570,7 @@ select{
 }
 
 .price-for-detail{
-    margin-right: 280px;
+    margin-right: 200px;
     margin-top: 55px;
     font-size: 45px;
 }
@@ -1634,7 +1634,7 @@ select{
         width: 100% !important;
     }
     .price-for-detail{
-        margin-right: 70px !important;
+        margin-right: 120px !important;
         margin-top:0 !important;
         font-size: 25px !important;
     }

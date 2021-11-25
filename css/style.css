@@ -1560,9 +1560,10 @@ select{
 }
 
 .price-for-detail{
-    margin-left: 280px;
+    margin-left: 200px;
     margin-top: 55px;
     font-size: 45px;
+    text-align: center !important;
 }
 
 .category-detail .swiper-slide {
@@ -1625,7 +1626,7 @@ select{
         width: 100% !important;
     }
     .price-for-detail{
-        margin-left: 70px !important;
+        margin-left: 5px !important;
         margin-top:0 !important;
         font-size: 25px !important;
     }
